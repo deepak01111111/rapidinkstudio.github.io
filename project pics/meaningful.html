@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tattoo Training </title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="rough.css">
+
+</head>
+<style>
+    .gallery{
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+    .gallery .image{
+      width: calc(100% / 4);
+      padding: 7px;
+    }
+    .gallery .image span{
+      display: flex;
+      width: 100%;
+      overflow: hidden;
+    }
+    .gallery .image img{
+      width: 100%;
+      vertical-align: middle;
+      transition: all 0.3s ease;
+    }
+    .gallery .image:hover img{
+      transform: scale(1.1);
+    }
+    .gallery .image.hide{
+      display: none;
+    }
+    .gallery .image.show{
+      animation: animate 0.4s ease;
+    }
+    .wrapper h1{
+        color :  #3e8e41;
+        text-align: center;font-size:5ch ;
+    
+    text-decoration: underline;  }
+    .wrapper{
+      margin: 100px auto;
+      max-width: 1100px;
+    }
+    .wrapper p{
+        color :  #3e8e41;
+        text-align: center;font-size:5ch ;
+ font-size: 20px;
+ }
+ .vedio {
+     max-height: 100%;
+ }
+</style>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <a href="rough .html" class="logo"><img src="download.png" alt ="LOGO"> </a>
+    <a href="#" class="text"><h3>B-A-T ACADEMY</h3></a>
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#om">om</a>
+        <a href="#popular">popular courses</a>
+        <a href="#gallery">our services</a>
+ 
+    </nav>
+ 
+</header>
+
+<!-- header section ends -->
+ 
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <h1 class="heading"> OUR  <span> SERVICES </span> </h1>
+
+    <div class="box-container">
+
+        
+        <div class="box">
+            <img src="https://i.pinimg.com/736x/40/7c/12/407c127792bcd63c51e4048e63956374.jpg" alt="">
+            <div class="content">
+                <h3>Ankle Tattoos</h3>
+                <p>BEST SIZE -SMALL
+                    <br>how common?= uncommon1/5   </p>
+                <h4> PAIN LEVEL-3/5</h4>
+                <a href="#Ankle tattoos" class="btn">Open</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://i.pinimg.com/564x/ad/a4/f7/ada4f7a463556a3dd953e99864e9f10f.jpg" alt="">
+            <div class="content">
+                <h3>Arm Tattoos</h3>
+                <p>BEST SIZE -medium, large
+                    <br>how common?= common5/5   </p>
+                <h4> PAIN LEVEL-2/5</h4>
+                <a href="#Arm tattoos" class="btn">Open</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://i.pinimg.com/564x/91/d8/51/91d85169e943ddc8f936150ec043e324.jpg" alt="">
+            <div class="content">
+                <h3>Finger tattoos</h3>
+                <p>BEST SIZE -SMALL,medium
+                    <br>how common?= 3/5   </p>
+                <h4> PAIN LEVEL-4/5</h4>
+                <a href="#Finger tattoos" class="btn">Open</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://i.pinimg.com/564x/a2/13/7f/a2137f9b2c0998e65526736b64cbbc68.jpg" alt="">
+            <div class="content">
+                <h3>Face Tattoos</h3>
+                <p>BEST SIZE -SMALL
+                    <br>how common?= common1/5   </p>
+                <h4> PAIN LEVEL-5/5</h4>
+                <a href="#Face tattoos" class="btn">Open</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://i.pinimg.com/564x/8e/99/b3/8e99b30df3979427771ea3109d2f8c25.jpg" alt="">
+            <div class="content">
+                <h3>Back Tattoos</h3>
+                <p>BEST SIZE -medium, large
+                    <br>how common?=  3/5   </p>
+                <h4> PAIN LEVEL-3/5</h4>
+                <a href="#Back tattoos" class="btn">Open</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://i.pinimg.com/736x/af/0f/b2/af0fb2f326885778ba57558af42af838.jpg" alt="">
+            <div class="content">
+                <h3>Butt tattoos</h3>
+                <p>BEST SIZE -SMALL
+                    <br>how common?= uncommon1/5   </p>
+                <h4> PAIN LEVEL-4/5</h4>
+                <a href="#Butt tattoos" class="btn">Open</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://i.pinimg.com/564x/3b/9f/13/3b9f13c55a5f13825444f49ab8762b11.jpg" alt="">
+            <div class="content">
+                <h3>Calf Tattoos Tattoos</h3>
+                <p>BEST SIZE -medium
+                    <br>how common?=  3/5   </p>
+                <h4> PAIN LEVEL-4/5</h4>
+                <a href="#Calf Tattoos " class="btn">Open</a>
+            </div>
+        </div>        <div class="box">
+            <img src="https://i.pinimg.com/564x/8c/1f/77/8c1f77bcb310c2ea67f6f176b6627356.jpg" alt="">
+            <div class="content">
+                <h3>Chest Tattoos</h3>
+                <p>BEST SIZE -medium
+                    <br>how common?= 3/5   </p>
+                <h4> PAIN LEVEL-3/5</h4>
+                <a href="#Chest Tattoos" class="btn">Open</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://i.pinimg.com/564x/0c/cd/c8/0ccdc8eb8d9e1bb75ca9cf2cdb4c76af.jpg" alt="">
+            <div class="content">
+                <h3>Foot Tattoos</h3>
+                <p>BEST SIZE -medium,small
+                    <br>how common?=  4/5   </p>
+                <h4> PAIN LEVEL-5/5</h4>
+                <a href="#Foot Tattoos" class="btn">Open</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://i.pinimg.com/564x/ba/03/4d/ba034de8a203f221d9cada42ca9abcb3.jpg" alt="">
+            <div class="content">
+                <h3>Forearm Tattoos</h3>
+                <p>BEST SIZE -SMALL,medium,large
+                    <br>how common?= 2/5   </p>
+                <h4> PAIN LEVEL-3/5</h4>
+                <a href="#Forearm Tattoos" class="btn">Open</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://i.pinimg.com/564x/15/90/58/159058e76af854d59f5b5be169af9f33.jpg" alt="">
+            <div class="content">
+                <h3>Hand Tattoos  </h3>
+                <p>BEST SIZE -small,medium
+                    <br>how common?=  4/5   </p>
+                <h4> PAIN LEVEL-4/5</h4>
+                <a href="#Hand Tattoos " class="btn">Open</a>
+            </div>
+        </div>        <div class="box">
+            <img src="https://i.pinimg.com/564x/3a/b8/8c/3ab88cd2b9e0e963edc440cca0aa9c66.jpg" alt="">
+            <div class="content">
+                <h3>Leg Tattoos (Thigh Tattoos)</h3>
+                <p>BEST SIZE -medium,large
+                    <br>how common?= 3/5   </p>
+                <h4> PAIN LEVEL-3/5</h4>
+                <a href="#Leg Tattoos (Thigh Tattoos)" class="btn">Open</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://i.pinimg.com/564x/05/44/4b/05444bc49dfd47ef292cc35719a06a21.jpg" alt="">
+            <div class="content">
+                <h3>Neck Tattoos</h3>
+                <p>BEST SIZE -small,medium
+                    <br>how common?=  5/5   </p>
+                <h4> PAIN LEVEL-4/5</h4>
+                <a href="#Neck tattoos" class="btn">Open</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://i.pinimg.com/564x/32/6f/6d/326f6db797314dc1fad98f27d0500783.jpg" alt="">
+            <div class="content">
+                <h3>Palm Tattoos</h3>
+                <p>BEST SIZE -SMALL
+                    <br>how common?= 5/5   </p>
+                <h4> PAIN LEVEL-4/5</h4>
+                <a href="#Palm Tattoos" class="btn">Open</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://i.pinimg.com/564x/48/7b/90/487b90f2389cc8db99c53626574b44ee.jpg" alt="">
+            <div class="content">
+                <h3>Rib Tattoos (Side Tattoos)</h3>
+                <p>BEST SIZE -small,medium,large
+                    <br>how common?=  4/5   </p>
+                <h4> PAIN LEVEL-5/5</h4>
+                <a href="#Rib Tattoos (Side Tattoos)" class="btn">Open</a>
+            </div>
+        </div>        <div class="box">
+            <img src="https://i.pinimg.com/564x/32/2a/44/322a4446ec3c65fb970de3da10d35256.jpg" alt="">
+            <div class="content">
+                <h3>Shoulder Tattoos</h3>
+                <p>BEST SIZE -medium
+                    <br>how common?= 1/5   </p>
+                <h4> PAIN LEVEL-2/5</h4>
+                <a href="#Shoulder Tattoos" class="btn">Open</a>
+            </div>
+        </div>
+         
+        </div>
+
+     
+
+</section>
+<div class="vedio" id="vedio"> 
+     
+<iframe src="https://www.bing.com/" width="1540" height="305"frameborder=" 00"></iframe>
+ 
+
+</div>
+<!-- gallery section ends -->
+
+  <div class="om" id="om">
+      <div class="wrapper">
+    <!-- filter Items -->
+    
+    <h1>Symbol of Sri Yantra</h1>
+    <p>Sri Yantra is a symbol that represents the spiritual journey that refers to the passage of time and the life experiences that appear to us throughout life and which help us to grow. It is a symbol with an exciting and sophisticated result, although it is not very difficult to tattoo and the final result can be beautiful.</a></p></p>
+  
+    <!-- filter Images -->
+    <div class="gallery">
+        <div class="image" data-name="Hand"><span><img src="zzzzzzzzzzzzzz\sri-yantra-tattoo.jpg" alt=""></span></div>
+        <div class="image" data-name="Back"><span><img src="zzzzzzzzzzzzzz\sri-yantra-tattoo-on-back.jpg" alt=""></span></div>
+         
+        <div class="image" data-name="Leg"><span><img src="zzzzzzzzzzzzzz\hindu-tattoos.jpg" alt=""></span></div>
+      <div class="image" data-name="Hand"><span><img src="zzzzzzzzzzzzzz\sri-yantra-tattoo-on-hand.jpg" alt=""></span></div>
+      <span id="Check_this_out_Choosing_a_Superman_Tattoo">Check this out: <a href="https://tattooli.com/choosing-a-superman-tattoo/">Choosing a Superman Tattoo</a></span>
+      
+    </div>
+  </div>
+</div>
+   
+
+ 
+<div class="tattoo for guys" id="tattoo for guys">
+    <div class="wrapper">
+  <!-- filter Items -->
+  
+  <h1>boys tattoos</h1>
+  <p> 50 BOYS TATTOO ideas in 2021 </a></p></p>
+
+  <!-- filter Images -->
+  <div class="gallery">
+      <div class="image" data-name="Hand"><span><img src="https://i.pinimg.com/736x/8e/a1/78/8ea178a8876265017d006e8106661a3b.jpg" alt=""></span></div>
+      <div class="image" data-name="Back"><span><img src="https://i.pinimg.com/564x/f1/30/38/f1303816e7270e0760a3471b78f0d69a.jpg" alt=""></span></div>     
+      <div class="image" data-name="Leg"><span><img src="zzzzzzzzzzzzzz\hindu-tattoos.jpg" alt=""></span></div>
+    <div class="image" data-name="Hand"><span><img src="https://i.pinimg.com/564x/42/6e/f6/426ef642b5ae774c433151d6fe585bd3.jpg" alt=""></span></div>
+    <span id="Check_this_out_Choosing_a_Superman_Tattoo">Check this out: <a href="https://i.pinimg.com/564x/a4/5c/92/a45c92c90fcc9c9eccb061429bc3c146.jpg">Choosing a Superman Tattoo</a></span>
+    
+  </div>
+</div>
+</div>
+
+
+<div class="Ankle tattoos" id="Ankle tattoos">
+    <div class="wrapper">
+  <!-- filter Items -->
+  
+  <h1>Ankle tattoos</h1>
+  <p> One of the worst mistakes made by tattoo virgins is looking for a good time with a "cute little ankle tattoo". Ankle tattoos may look delicate, however they are on the more painful side. Unlike most painful tattoos, Ankle tattoos are quite popular. The best size for Ankle tattoos is smaller, that being said, large "leg sleeves" will also include the Ankle.  </a></p></p>
+
+  <!-- filter Images -->
+  <div class="gallery">
+      <div class="image" data-name="Hand"><span><img src="https://i.pinimg.com/736x/73/eb/34/73eb3467f1655f95a1abbfef4d54b340.jpg" alt=""></span></div>
+      <div class="image" data-name="Back"><span><img src="https://i.pinimg.com/564x/b0/cc/6b/b0cc6b65f6bdc02c8b5c1e6347add268.jpg" alt=""></span></div>     
+      <div class="image" data-name="Leg"><span><img src="https://i.pinimg.com/564x/01/56/8d/01568de6b946cffdfbdbcb50b0872184.jpg" alt=""></span></div>
+ 
+    <span id="Check_this_out_Choosing_a_Superman_Tattoo">Check this out: <a href="https://i.pinimg.com/564x/a4/5c/92/a45c92c90fcc9c9eccb061429bc3c146.jpg">Choosing a Superman Tattoo</a></span>
+    
+  </div>
+</div>
+</div>
+<div class="Arm tattoos" id="Arm tattoos">
+    <div class="wrapper">
+  <!-- filter Items -->
+  
+  <h1>Arm tattoos</h1>
+  <p> Just like Johnny Rico and the Mobile Infantry in Starship Troopers, Arm tattoos make a great place to get your first tattoo. Arm tattoos are not very painful and can be hidden easily. This makes Arm tattoos very popular, thus more common than other body parts for tattoos. Arm tattoos are suitable for any size tattoo, but lend themselves better to medium or large tattoo designs.
+
+    (COMING SOON ArmTattoo Page, to learn more about Arm Tattoos, see more pictures of Arm Tattoos, and to get inspiration for your next tattoo.) </a></p></p>
+
+  <!-- filter Images -->
+  <div class="gallery">
+      <div class="image" data-name="Hand"><span><img src="https://i.pinimg.com/564x/33/8e/93/338e9361502e4849be923c18429fa00d.jpg" alt=""></span></div>
+      <div class="image" data-name="Back"><span><img src="https://i.pinimg.com/564x/e3/9e/4f/e39e4f28b470bf5d9ead223c4850c419.jpg" alt=""></span></div>     
+      <div class="image" data-name="Leg"><span><img src="https://i.pinimg.com/564x/10/04/a7/1004a71bce5b28d519d729f6ada69320.jpg" alt=""></span></div>
+      <div class="image" data-name="Leg"><span><img src="https://i.pinimg.com/564x/4d/d0/d6/4dd0d66d4969fbf33149edb294b942a3.jpg" alt=""></span></div>
+  </div>
+</div>
+</div>
+<div class="Finger tattoos" id="Finger tattoos">
+    <div class="wrapper">
+  <!-- filter Items -->
+  
+  <h1>Finger tattoos</h1>
+  <p> Just like Johnny Rico and the Mobile Infantry in Starship Troopers, Arm tattoos make a great place to get your first tattoo. Arm tattoos are not very painful and can be hidden easily. This makes Arm tattoos very popular, thus more common than other body parts for tattoos. Arm tattoos are suitable for any size tattoo, but lend themselves better to medium or large tattoo designs.
+    Tell people to f@#k off in style with a finger tattoo! We use our fingers for many things, so why not decorate them with tattoos. 
+
+    Finger tattoos are a bit more painful than the average tattoo, and they are also more rare. Because of their relatively small size, the best finger tattoos tend to be on the small side.</a></p></p>
+
+  <!-- filter Images -->
+  <div class="gallery">
+      <div class="image" data-name="Hand"><span><img src="https://i.pinimg.com/564x/33/8e/93/338e9361502e4849be923c18429fa00d.jpg" alt=""></span></div>
+      <div class="image" data-name="Back"><span><img src="https://i.pinimg.com/564x/e3/9e/4f/e39e4f28b470bf5d9ead223c4850c419.jpg" alt=""></span></div>     
+      <div class="image" data-name="Leg"><span><img src="https://i.pinimg.com/564x/10/04/a7/1004a71bce5b28d519d729f6ada69320.jpg" alt=""></span></div>
+ 
+  </div>
+</div>
+</div>
+<div class="Face tattoos" id="Face tattoos">
+    <div class="wrapper">
+  <!-- filter Items -->
+  
+  <h1>Face tattoos</h1>
+  <p> Just like Johnny Rico and the Mobile Infantry in Starship Troopers, Arm tattoos make a great place to get your first tattoo. Arm tattoos are not very painful and can be hidden easily. This makes Arm tattoos very popular, thus more common than other body parts for tattoos. Arm tattoos are suitable for any size tattoo, but lend themselves better to medium or large tattoo designs.
+
+    (COMING SOON ArmTattoo Page, to learn more about Arm Tattoos, see more pictures of Arm Tattoos, and to get inspiration for your next tattoo.) </a></p></p>
+
+  <!-- filter Images -->
+  <div class="gallery">
+      <div class="image" data-name="Hand"><span><img src="https://i.pinimg.com/564x/33/8e/93/338e9361502e4849be923c18429fa00d.jpg" alt=""></span></div>
+      <div class="image" data-name="Back"><span><img src="https://i.pinimg.com/564x/e3/9e/4f/e39e4f28b470bf5d9ead223c4850c419.jpg" alt=""></span></div>     
+      <div class="image" data-name="Leg"><span><img src="https://i.pinimg.com/564x/10/04/a7/1004a71bce5b28d519d729f6ada69320.jpg" alt=""></span></div>
+ 
+  </div>
+</div>
+</div>
+<div class="Back tattoos" id="Back tattoos">
+    <div class="wrapper">
+  <!-- filter Items -->
+  
+  <h1>Back tattoos</h1>
+  <p> Just like Johnny Rico and the Mobile Infantry in Starship Troopers, Arm tattoos make a great place to get your first tattoo. Arm tattoos are not very painful and can be hidden easily. This makes Arm tattoos very popular, thus more common than other body parts for tattoos. Arm tattoos are suitable for any size tattoo, but lend themselves better to medium or large tattoo designs.
+
+    (COMING SOON ArmTattoo Page, to learn more about Arm Tattoos, see more pictures of Arm Tattoos, and to get inspiration for your next tattoo.) </a></p></p>
+
+  <!-- filter Images -->
+  <div class="gallery">
+      <div class="image" data-name="Hand"><span><img src="https://i.pinimg.com/564x/33/8e/93/338e9361502e4849be923c18429fa00d.jpg" alt=""></span></div>
+      <div class="image" data-name="Back"><span><img src="https://i.pinimg.com/564x/e3/9e/4f/e39e4f28b470bf5d9ead223c4850c419.jpg" alt=""></span></div>     
+      <div class="image" data-name="Leg"><span><img src="https://i.pinimg.com/564x/10/04/a7/1004a71bce5b28d519d729f6ada69320.jpg" alt=""></span></div>
+ 
+  </div>
+</div>
+</div>
+<div class="Butt tattoos" id="Butt tattoos">
+    <div class="wrapper">
+  <!-- filter Items -->
+  
+  <h1>Butt tattoos</h1>
+  <p> Just like Johnny Rico and the Mobile Infantry in Starship Troopers, Arm tattoos make a great place to get your first tattoo. Arm tattoos are not very painful and can be hidden easily. This makes Arm tattoos very popular, thus more common than other body parts for tattoos. Arm tattoos are suitable for any size tattoo, but lend themselves better to medium or large tattoo designs.
+
+    (COMING SOON ArmTattoo Page, to learn more about Arm Tattoos, see more pictures of Arm Tattoos, and to get inspiration for your next tattoo.) </a></p></p>
+
+  <!-- filter Images -->
+  <div class="gallery">
+      <div class="image" data-name="Hand"><span><img src="https://i.pinimg.com/564x/33/8e/93/338e9361502e4849be923c18429fa00d.jpg" alt=""></span></div>
+      <div class="image" data-name="Back"><span><img src="https://i.pinimg.com/564x/e3/9e/4f/e39e4f28b470bf5d9ead223c4850c419.jpg" alt=""></span></div>     
+      <div class="image" data-name="Leg"><span><img src="https://i.pinimg.com/564x/10/04/a7/1004a71bce5b28d519d729f6ada69320.jpg" alt=""></span></div>
+ 
+  </div>
+</div>
+</div>
+<div class="Calf Tattoos" id="Calf Tattoos">
+    <div class="wrapper">
+  <!-- filter Items -->
+  
+  <h1>Calf Tattoos</h1>
+  <p> Just like Johnny Rico and the Mobile Infantry in Starship Troopers, Arm tattoos make a great place to get your first tattoo. Arm tattoos are not very painful and can be hidden easily. This makes Arm tattoos very popular, thus more common than other body parts for tattoos. Arm tattoos are suitable for any size tattoo, but lend themselves better to medium or large tattoo designs.
+
+    (COMING SOON ArmTattoo Page, to learn more about Arm Tattoos, see more pictures of Arm Tattoos, and to get inspiration for your next tattoo.) </a></p></p>
+
+  <!-- filter Images -->
+  <div class="gallery">
+      <div class="image" data-name="Hand"><span><img src="https://i.pinimg.com/564x/33/8e/93/338e9361502e4849be923c18429fa00d.jpg" alt=""></span></div>
+      <div class="image" data-name="Back"><span><img src="https://i.pinimg.com/564x/e3/9e/4f/e39e4f28b470bf5d9ead223c4850c419.jpg" alt=""></span></div>     
+      <div class="image" data-name="Leg"><span><img src="https://i.pinimg.com/564x/10/04/a7/1004a71bce5b28d519d729f6ada69320.jpg" alt=""></span></div>
+ 
+  </div>
+</div>
+</div>
+<div class="Chest Tattoos" id="Chest Tattoos">
+    <div class="wrapper">
+  <!-- filter Items -->
+  
+  <h1>Chest Tattoos</h1>
+  <p> Just like Johnny Rico and the Mobile Infantry in Starship Troopers, Arm tattoos make a great place to get your first tattoo. Arm tattoos are not very painful and can be hidden easily. This makes Arm tattoos very popular, thus more common than other body parts for tattoos. Arm tattoos are suitable for any size tattoo, but lend themselves better to medium or large tattoo designs.
+
+    (COMING SOON ArmTattoo Page, to learn more about Arm Tattoos, see more pictures of Arm Tattoos, and to get inspiration for your next tattoo.) </a></p></p>
+
+  <!-- filter Images -->
+  <div class="gallery">
+      <div class="image" data-name="Hand"><span><img src="https://i.pinimg.com/564x/33/8e/93/338e9361502e4849be923c18429fa00d.jpg" alt=""></span></div>
+      <div class="image" data-name="Back"><span><img src="https://i.pinimg.com/564x/e3/9e/4f/e39e4f28b470bf5d9ead223c4850c419.jpg" alt=""></span></div>     
+      <div class="image" data-name="Leg"><span><img src="https://i.pinimg.com/564x/10/04/a7/1004a71bce5b28d519d729f6ada69320.jpg" alt=""></span></div>
+ 
+  </div>
+</div>
+</div>
+
+<div class="Foot Tattoos" id="Foot Tattoos">
+    <div class="wrapper">
+  <!-- filter Items -->
+  
+  <h1>Foot Tattoos</h1>
+  <p> Just like Johnny Rico and the Mobile Infantry in Starship Troopers, Arm tattoos make a great place to get your first tattoo. Arm tattoos are not very painful and can be hidden easily. This makes Arm tattoos very popular, thus more common than other body parts for tattoos. Arm tattoos are suitable for any size tattoo, but lend themselves better to medium or large tattoo designs.
+
+    (COMING SOON ArmTattoo Page, to learn more about Arm Tattoos, see more pictures of Arm Tattoos, and to get inspiration for your next tattoo.) </a></p></p>
+
+  <!-- filter Images -->
+  <div class="gallery">
+      <div class="image" data-name="Hand"><span><img src="https://i.pinimg.com/564x/33/8e/93/338e9361502e4849be923c18429fa00d.jpg" alt=""></span></div>
+      <div class="image" data-name="Back"><span><img src="https://i.pinimg.com/564x/e3/9e/4f/e39e4f28b470bf5d9ead223c4850c419.jpg" alt=""></span></div>     
+      <div class="image" data-name="Leg"><span><img src="https://i.pinimg.com/564x/10/04/a7/1004a71bce5b28d519d729f6ada69320.jpg" alt=""></span></div>
+ 
+  </div>
+</div>
+</div>
+<div class="Forearm Tattoos" id="Forearm Tattoos">
+    <div class="wrapper">
+  <!-- filter Items -->
+  
+  <h1>Forearm Tattoos</h1>
+  <p> Just like Johnny Rico and the Mobile Infantry in Starship Troopers, Arm tattoos make a great place to get your first tattoo. Arm tattoos are not very painful and can be hidden easily. This makes Arm tattoos very popular, thus more common than other body parts for tattoos. Arm tattoos are suitable for any size tattoo, but lend themselves better to medium or large tattoo designs.
+
+    (COMING SOON ArmTattoo Page, to learn more about Arm Tattoos, see more pictures of Arm Tattoos, and to get inspiration for your next tattoo.) </a></p></p>
+
+  <!-- filter Images -->
+  <div class="gallery">
+      <div class="image" data-name="Hand"><span><img src="https://i.pinimg.com/564x/33/8e/93/338e9361502e4849be923c18429fa00d.jpg" alt=""></span></div>
+      <div class="image" data-name="Back"><span><img src="https://i.pinimg.com/564x/e3/9e/4f/e39e4f28b470bf5d9ead223c4850c419.jpg" alt=""></span></div>     
+      <div class="image" data-name="Leg"><span><img src="https://i.pinimg.com/564x/10/04/a7/1004a71bce5b28d519d729f6ada69320.jpg" alt=""></span></div>
+ 
+  </div>
+</div>
+</div>
+
+<div class="HandTattoos" id="Hand Tattoos">
+    <div class="wrapper">
+  <!-- filter Items -->
+  
+  <h1>Hand Tattoos</h1>
+  <p> Just like Johnny Rico and the Mobile Infantry in Starship Troopers, Arm tattoos make a great place to get your first tattoo. Arm tattoos are not very painful and can be hidden easily. This makes Arm tattoos very popular, thus more common than other body parts for tattoos. Arm tattoos are suitable for any size tattoo, but lend themselves better to medium or large tattoo designs.
+
+    (COMING SOON ArmTattoo Page, to learn more about Arm Tattoos, see more pictures of Arm Tattoos, and to get inspiration for your next tattoo.) </a></p></p>
+
+  <!-- filter Images -->
+  <div class="gallery">
+      <div class="image" data-name="Hand"><span><img src="https://i.pinimg.com/564x/33/8e/93/338e9361502e4849be923c18429fa00d.jpg" alt=""></span></div>
+      <div class="image" data-name="Back"><span><img src="https://i.pinimg.com/564x/e3/9e/4f/e39e4f28b470bf5d9ead223c4850c419.jpg" alt=""></span></div>     
+      <div class="image" data-name="Leg"><span><img src="https://i.pinimg.com/564x/10/04/a7/1004a71bce5b28d519d729f6ada69320.jpg" alt=""></span></div>
+ 
+  </div>
+</div>
+</div>
+
+<div class="Leg Tattoos (Thigh Tattoos)" id="Leg Tattoos (Thigh Tattoos)">
+    <div class="wrapper">
+  <!-- filter Items -->
+  
+  <h1>Leg Tattoos (Thigh Tattoos)</h1>
+  <p> Just like Johnny Rico and the Mobile Infantry in Starship Troopers, Arm tattoos make a great place to get your first tattoo. Arm tattoos are not very painful and can be hidden easily. This makes Arm tattoos very popular, thus more common than other body parts for tattoos. Arm tattoos are suitable for any size tattoo, but lend themselves better to medium or large tattoo designs.
+
+    (COMING SOON ArmTattoo Page, to learn more about Arm Tattoos, see more pictures of Arm Tattoos, and to get inspiration for your next tattoo.) </a></p></p>
+
+  <!-- filter Images -->
+  <div class="gallery">
+      <div class="image" data-name="Hand"><span><img src="https://i.pinimg.com/564x/33/8e/93/338e9361502e4849be923c18429fa00d.jpg" alt=""></span></div>
+      <div class="image" data-name="Back"><span><img src="https://i.pinimg.com/564x/e3/9e/4f/e39e4f28b470bf5d9ead223c4850c419.jpg" alt=""></span></div>     
+      <div class="image" data-name="Leg"><span><img src="https://i.pinimg.com/564x/10/04/a7/1004a71bce5b28d519d729f6ada69320.jpg" alt=""></span></div>
+ 
+  </div>
+</div>
+</div>
+
+<div class="Neck tattoos" id="Neck tattoos">
+    <div class="wrapper">
+  <!-- filter Items -->
+  
+  <h1>Neck tattoos</h1>
+  <p> Just like Johnny Rico and the Mobile Infantry in Starship Troopers, Arm tattoos make a great place to get your first tattoo. Arm tattoos are not very painful and can be hidden easily. This makes Arm tattoos very popular, thus more common than other body parts for tattoos. Arm tattoos are suitable for any size tattoo, but lend themselves better to medium or large tattoo designs.
+
+    (COMING SOON ArmTattoo Page, to learn more about Arm Tattoos, see more pictures of Arm Tattoos, and to get inspiration for your next tattoo.) </a></p></p>
+
+  <!-- filter Images -->
+  <div class="gallery">
+      <div class="image" data-name="Hand"><span><img src="https://i.pinimg.com/564x/33/8e/93/338e9361502e4849be923c18429fa00d.jpg" alt=""></span></div>
+      <div class="image" data-name="Back"><span><img src="https://i.pinimg.com/564x/e3/9e/4f/e39e4f28b470bf5d9ead223c4850c419.jpg" alt=""></span></div>     
+      <div class="image" data-name="Leg"><span><img src="https://i.pinimg.com/564x/10/04/a7/1004a71bce5b28d519d729f6ada69320.jpg" alt=""></span></div>
+ 
+  </div>
+</div>
+</div>
+<div class="Palm Tattoos" id="Palm Tattoos">
+    <div class="wrapper">
+  <!-- filter Items -->
+  
+  <h1>Palm Tattoos</h1>
+  <p> Just like Johnny Rico and the Mobile Infantry in Starship Troopers, Arm tattoos make a great place to get your first tattoo. Arm tattoos are not very painful and can be hidden easily. This makes Arm tattoos very popular, thus more common than other body parts for tattoos. Arm tattoos are suitable for any size tattoo, but lend themselves better to medium or large tattoo designs.
+
+    (COMING SOON ArmTattoo Page, to learn more about Arm Tattoos, see more pictures of Arm Tattoos, and to get inspiration for your next tattoo.) </a></p></p>
+
+  <!-- filter Images -->
+  <div class="gallery">
+      <div class="image" data-name="Hand"><span><img src="https://i.pinimg.com/564x/33/8e/93/338e9361502e4849be923c18429fa00d.jpg" alt=""></span></div>
+      <div class="image" data-name="Back"><span><img src="https://i.pinimg.com/564x/e3/9e/4f/e39e4f28b470bf5d9ead223c4850c419.jpg" alt=""></span></div>     
+      <div class="image" data-name="Leg"><span><img src="https://i.pinimg.com/564x/10/04/a7/1004a71bce5b28d519d729f6ada69320.jpg" alt=""></span></div>
+ 
+  </div>
+</div>
+</div>
+<div class="Rib Tattoos (Side Tattoos)" id="Rib Tattoos (Side Tattoos)">
+    <div class="wrapper">
+  <!-- filter Items -->
+  
+  <h1>Rib Tattoos (Side Tattoos)</h1>
+  <p> Just like Johnny Rico and the Mobile Infantry in Starship Troopers, Arm tattoos make a great place to get your first tattoo. Arm tattoos are not very painful and can be hidden easily. This makes Arm tattoos very popular, thus more common than other body parts for tattoos. Arm tattoos are suitable for any size tattoo, but lend themselves better to medium or large tattoo designs.
+
+    (COMING SOON ArmTattoo Page, to learn more about Arm Tattoos, see more pictures of Arm Tattoos, and to get inspiration for your next tattoo.) </a></p></p>
+
+  <!-- filter Images -->
+  <div class="gallery">
+      <div class="image" data-name="Hand"><span><img src="https://i.pinimg.com/564x/33/8e/93/338e9361502e4849be923c18429fa00d.jpg" alt=""></span></div>
+      <div class="image" data-name="Back"><span><img src="https://i.pinimg.com/564x/e3/9e/4f/e39e4f28b470bf5d9ead223c4850c419.jpg" alt=""></span></div>     
+      <div class="image" data-name="Leg"><span><img src="https://i.pinimg.com/564x/10/04/a7/1004a71bce5b28d519d729f6ada69320.jpg" alt=""></span></div>
+ 
+  </div>
+</div>
+</div>
+
+<div class="Shoulder Tattoos" id="Shoulder Tattoos">
+    <div class="wrapper">
+  <!-- filter Items -->
+  
+  <h1>Shoulder Tattoos</h1>
+  <p> Just like Johnny Rico and the Mobile Infantry in Starship Troopers, Arm tattoos make a great place to get your first tattoo. Arm tattoos are not very painful and can be hidden easily. This makes Arm tattoos very popular, thus more common than other body parts for tattoos. Arm tattoos are suitable for any size tattoo, but lend themselves better to medium or large tattoo designs.
+
+    (COMING SOON ArmTattoo Page, to learn more about Arm Tattoos, see more pictures of Arm Tattoos, and to get inspiration for your next tattoo.) </a></p></p>
+
+  <!-- filter Images -->
+  <div class="gallery">
+      <div class="image" data-name="Hand"><span><img src="https://i.pinimg.com/564x/33/8e/93/338e9361502e4849be923c18429fa00d.jpg" alt=""></span></div>
+      <div class="image" data-name="Back"><span><img src="https://i.pinimg.com/564x/e3/9e/4f/e39e4f28b470bf5d9ead223c4850c419.jpg" alt=""></span></div>     
+      <div class="image" data-name="Leg"><span><img src="https://i.pinimg.com/564x/10/04/a7/1004a71bce5b28d519d729f6ada69320.jpg" alt=""></span></div>
+ 
+  </div>
+</div>
+</div>
+
+
+
+
+
+ 
+
+
+</body>
+</html>

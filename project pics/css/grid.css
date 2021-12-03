@@ -1,0 +1,47 @@
+{
+}
+.hero .row {
+    vertical-align: middle;
+}
+.table-cell {
+    display: table-cell;
+}
+.row {
+    margin-right: -15
+px
+;
+    margin-left: -15
+px
+;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    min-height: 100%;
+    font-family: merriweather,serif;
+    color: #000;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+.clearfix:before, .clearfix:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after {
+    display: table;
+    content: " ";
+}
+.clearfix:after, .container:after, .container-fluid:after, .row:after {
+    clear: both;
+}
+.clearfix:before, .clearfix:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after {
+    display: table;
+    content: " ";
+}

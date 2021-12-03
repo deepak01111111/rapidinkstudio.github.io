@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Image Gallery  </title>
+     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    *{
+      margin: -3px;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    ::selection{
+      color: #fff;
+      background: #007bff;
+    }
+     
+    body{
+        
+      padding: 10px;
+    }
+     .navbar{
+         text-align: center;
+           
+     }
+     .navbar {
+     background:  #3e8e4181;
+    height: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+  .navbar__container img{
+     border-radius: 53px;
+    height: 73px;
+  }
+  
+  
+  
+  .navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .navbar__item {
+    height: 80px;
+  }
+  
+  .navbar__links {
+    
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 115px;
+    text-decoration: none;
+    height: 100%;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+  }
+  
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #833ab4;
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar__links:hover {
+    color: #ffffff;
+    transition: all 0.3s ease;
+  }
+     .wrapper h2{
+         font-size: 1.5ch;
+     }
+    .wrapper h1{
+        color :  #3e8e41;
+        text-align: center;font-size:5ch ;
+    
+    text-decoration: underline;  }
+    .wrapper{
+      margin: 100px auto;
+      max-width: 1100px;
+    }
+    .wrapper nav{
+      display: flex;
+      justify-content: center;
+    }
+    .wrapper .items{
+      display: flex;
+      max-width: 720px;
+      width: 100%;
+      justify-content: space-between;
+    }
+    .items span{
+      margin: 18px;
+      padding: 7px 25px;
+      font-size: 18px;
+      font-weight: 500;
+      cursor: pointer;
+      color: #007bff;
+      border-radius: 50px;
+      border: 2px solid #007bff;
+      transition: all 0.3s ease;
+    }
+    .items span.active,
+    .items span:hover{
+      color: #fff;
+      background: #007bff;
+    }
+    
+    .gallery{
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+    .gallery .image{
+      width: calc(100% / 4);
+      padding: 7px;
+    }
+    .gallery .image span{
+      display: flex;
+      width: 100%;
+      overflow: hidden;
+    }
+    .gallery .image img{
+      width: 100%;
+      vertical-align: middle;
+      transition: all 0.3s ease;
+    }
+    .gallery .image:hover img{
+      transform: scale(1.1);
+    }
+    .gallery .image.hide{
+      display: none;
+    }
+    .gallery .image.show{
+      animation: animate 0.4s ease;
+    }
+     
+     
+    .dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.css-4llrzn {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    background-image: url("https://assets.healthline.com/content/images/wave-background-desktop.svg");
+}
+.css-4llrzn {
+    background-color: #fbf5ed;
+    clear: both;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    background-image: url("https://assets.healthline.com/content/images/wave-background-mobile.svg");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+     
+    
+     </style>
+<body>
+     
+          <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <img src="download.png" alt="b-A-t.com">
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#OHM" class="navbar__links" id="OHM-page">OHM</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#sriyantra" class="navbar__links" id="sriyantra-page">sriyantra</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#Henna" class="navbar__links" id="Henna-page">Henna </a>
+             <li class="navbar__item">
+                <a href="#Shiva" class="navbar__links" id="Shiva-page">Shiva</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#Ganesha tattoos" class="navbar__links" id="Ganesha tattoos-page">Ganesha tattoos</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#Lotus" class="navbar__links" id="Lotus-page">Lotus</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#Hamsa-tattoos" class="navbar__links" id="Hamsa-tattoos-page">Hamsa-tattoos</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#mandalas-tattoos" class="navbar__links" id="mandalas-tattoos-page">mandalas-tattoos</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#Unalome-tattoos" class="navbar__links" id="Unalome-tattoos-page">Unalome-tattoos</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#Indian elephant-tattoos" class="navbar__links" id="Indian elephant-tattoos-page">Indian elephant-tattoos</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#GALLERY" class="navbar__links" id="GALLERY-page">GALLERY </a>
+              </li>
+               
+              
+          </li>
+           
+ 
+      </div>
+      
+          
+         
+      </nav>
+       
+           
+ 
+          
+            <br> 
+            <div class="dropdown">
+              <button class="dropbtn"><mark>3Ps</mark></button>
+              <div class="dropdown-content">
+              <a href=" meaningful.html">pain-chart <br>  Placement <br>  Popularity</a>
+              <a href="meaningful.html">tattoo details</a>
+              </div>
+            </div>
+           
+          
+            <div class="dropdown">
+              <button class="dropbtn">Upper-Body</button>
+              <div class="dropdown-content">
+              <a href="https://www.google.com/search?q=neck+tattoo+designs&client=firefox-b-d&hl=en-US&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiu9by92aT0AhWuwzgGHaOhBEAQ_AUoAXoECAEQAw&biw=1536&bih=739&dpr=1.25">Neck</a>
+              <a href="https://www.google.com/search?q=forearm+tattoo+designs&tbm=isch&ved=2ahUKEwinrYS_2aT0AhWvi9gFHb-ZCp8Q2-cCegQIABAA&oq=forearm+tattoo+designs&gs_lcp=CgNpbWcQA1DvCFjQGmCJHmgAcAB4AIABAIgBAJIBAJgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=A72XYeefKK-X4t4Pv7Oq-Ak&bih=739&biw=1536&client=firefox-b-d&hl=en-US">Forearm</a>
+              <a href="https://www.google.com/search?q=+arm+tattoo+designs&tbm=isch&ved=2ahUKEwiEor-P2qT0AhWJM7cAHctuAKYQ2-cCegQIABAA&oq=+arm+tattoo+designs&gs_lcp=CgNpbWcQAzIHCAAQsQMQQzIICAAQgAQQsQMyBAgAEEMyBQgAEIAEMgQIABBDMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgARQghZYghZg8yBoAHAAeACAAdsCiAHSBJIBBTItMS4xmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=rL2XYYScGInn3LUPy92BsAo&bih=739&biw=1536&client=firefox-b-d&hl=en-US">Arm</a>
+              <a href="https://www.google.com/search?q=chest+tattoo+designs&tbm=isch&ved=2ahUKEwiGiaWx2qT0AhXwzjgGHYkvDZ0Q2-cCegQIABAA&oq=chest+tattoo+designs&gs_lcp=CgNpbWcQAzIFCAAQgAQyBAgAEEMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoGCAAQBxAeUABY6QlgmQ5oAHAAeACAAeYBiAHcB5IBBTAuNC4xmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=872XYcbDEPCd4-EPid-06Ak&bih=739&biw=1536&client=firefox-b-d&hl=en-US">Chest</a>
+              <a href="https://www.google.com/search?q=back+tattoo+designs&tbm=isch&ved=2ahUKEwjooMHG2qT0AhUsgGMGHXdyBmoQ2-cCegQIABAA&oq=back+tattoo+designs&gs_lcp=CgNpbWcQAzIECAAQQzIFCAAQgAQyBQgAEIAEMgUIABCABDIECAAQQzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgYIABAHEB5Q2QpYphtg_x1oAXAAeACAAaECiAHtCpIBBTAuMi40mAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=H76XYaiVL6yAjuMP9-SZ0AY&bih=739&biw=1536&client=firefox-b-d&hl=en-US">Back</a>
+              <a href="https://www.google.com/search?q=belo+ears+tattoo+designs&tbm=isch&ved=2ahUKEwjL35Pb2qT0AhV0ynMBHembCEgQ2-cCegQIABAA&oq=belo+ears+tattoo+designs&gs_lcp=CgNpbWcQAzoECAAQQzoFCAAQgAQ6BggAEAcQHjoICAAQBxAFEB46CAgAEAgQBxAeUNkLWN4sYOE0aABwAHgAgAH8AYgBnxCSAQUwLjQuNpgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=S76XYYuOBPSUz7sP6beiwAQ&bih=739&biw=1536&client=firefox-b-d&hl=en-US">Below-Ears</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Lower-Body</button>
+              <div class="dropdown-content">
+              <a href="https://www.google.com/search?q=calf+tattoo+designs&tbm=isch&ved=2ahUKEwjMv8T02qT0AhUFzaACHSgeAXQQ2-cCegQIABAA&oq=calf+tattoo+designs&gs_lcp=CgNpbWcQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIGCAAQBxAeUIINWKcWYJceaABwAHgAgAGVBIgBvgqSAQkwLjIuMi41LTGYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=gL6XYcz_EYWag8UPqLyEoAc&bih=739&biw=1536&client=firefox-b-d&hl=en-US">Calf</a>
+              <a href="https://www.google.com/search?q=ankle+tattoo+designs&tbm=isch&ved=2ahUKEwjp-_uQ26T0AhXiyaACHSdtDB0Q2-cCegQIABAA&oq=ankle+tattoo+designs&gs_lcp=CgNpbWcQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BAgAEEM6BggAEAcQHlD5CFivHmCmIWgAcAB4AIAB7QGIAaALkgEFMC4zLjSYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=u76XYamyOOKTg8UPp9qx6AE&bih=739&biw=1536&client=firefox-b-d&hl=en-US">Ankle</a>
+              <a href="https://www.google.com/search?q=loer+backtattoo+designs&tbm=isch&ved=2ahUKEwiIquee26T0AhWv5nMBHYeCB5MQ2-cCegQIABAA&oq=loer+backtattoo+designs&gs_lcp=CgNpbWcQAzoECAAQQzoFCAAQgAQ6BggAEAcQHlCYC1jBI2DSJmgAcAB4AIAB2wOIAboRkgEJMC41LjQuMC4xmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=2L6XYYjeOa_Nz7sPh4WemAk&bih=739&biw=1536&client=firefox-b-d&hl=en-US">Lower-Back</a>
+              <a href="https://www.google.com/search?q=thigh+tattoo+designs&tbm=isch&ved=2ahUKEwjK0dy626T0AhWagGMGHfwuAMkQ2-cCegQIABAA&oq=thigh+tattoo+designs&gs_lcp=CgNpbWcQAzIECAAQQzIECAAQQzIECAAQQzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgARQAFgAYKmrAmgBcAB4AIAB_jiIAf44kgEDOS0xmAEAqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=E7-XYYr8HZqBjuMP_N2AyAw&bih=739&biw=1536&client=firefox-b-d&hl=en-US">Thigh</a>
+              <a href="https://www.google.com/search?q=toe+tattoo+designs&client=firefox-b-d&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjb87rP26T0AhUTyzgGHXZ3BwEQ_AUoAXoECAEQAw&biw=1536&bih=739&dpr=1.25">Toe</a>
+              <a href="https://www.google.com/search?q=knee+tattoo+designs&client=firefox-b-d&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj7rKjO26T0AhUPzjgGHf4ABnwQ_AUoAXoECAEQAw&biw=1536&bih=739&dpr=1.25">Knee</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn"><mark> Healthline</mark></button>
+              <div class="dropdown-content">
+              <a href="#Healthline">Selecting a shop and an artist</a>
+              <a href="#STYLE">STYLE</a>
+              <a href="#Design">Design</a>
+              <a href="#Color">Color</a>
+               
+              </div>       
+            </div>
+            
+  <div class="wrapper">
+    <!-- filter Items -->
+    <h1>Indian-Tattoos Ideas Explained Step by Step:
+      <br> Tattoos from India</h1> <br> 
+    <h2>Hindu tattoos are one of the most traditional styles we can find and have a long history behind them. Henna is a central element within this style that can be observed in many social events such as a wedding. Hindu tattoos from India refer to a millenarian culture so it can be seen that there are numerous designs perfected throughout history and not only that but that they have deep and colourful meanings that can be a good option for tattooing.
+    <br> For this, we will focus on different Hindu tattoos that refer to this culture and what each of them means: </h2>
+    <br>
+    <div class="OHM" id="OHM">
+    <br>
+    <br>
+    <br>
+ 
+    <h1>Ohm is another of the classic symbols of the Hindu religion.</h1>
+    <p>It is the symbol that relates to generation, nutrition and destruction. It is the first sound that is used in different relaxation techniques, and that has to do with the vital energies that we have in the body. <p>if you already have tattoos and would like to keep them bright and nice, feel free to check this post about <a href="https://tattooli.com/best-lotions-for-old-tattoos/">best lotions for old tattoos</a></p></p>
+    <nav>
+      <div class="items">
+        <span class="item active" data-name="all">All</span>
+        <span class="item" data-name="Hand">Hand</span>
+        <span class="item" data-name="Neck">Neck</span>
+        <span class="item" data-name="Chest">Chest</span>
+        <span class="item" data-name="Leg">Leg</span>
+        <span class="item" data-name="Back">Back</span>
+        <span class="item" data-name="Arm">Arm</span>
+      </div>
+    </nav>
+    <!-- filter Images -->
+    <div class="gallery">
+        <div class="image" data-name="Hand"><span><img src="https://tattooli.com/wp-content/uploads/2019/04/ohm-tattoo.jpg" alt=""></span></div>
+        <div class="image" data-name="Back"><span><img src="zzzzzzzzzzzzzz\Om-Symbol-Tattoo-76.jpg" alt=""></span></div>
+        <div class="image" data-name="Leg"><span><img src="zzzzzzzzzzzzzz\pattern-male-om-leg-calf-tattoo-with-black-ink.jpg" alt=""></span></div>
+        <div class="image" data-name="Neck"><span><img src="ZZASAS.jpg" alt=""></span></div>
+        <div class="image" data-name="Arm"><span><img src="zzzzzzzzzzzzzz\Amazing-Black-Om-Hinduism-Tattoo-Design-For-Forearm.jpg" alt=""></span></div>
+        <div class="image" data-name="Back"><span><img src="zzzzzzzzzzzzzz\a4502b07a5ab050f71e8c291fa393e6e.jpg" alt=""></span></div>
+        <div class="image" data-name="Chest"><span><img src="zzzzzzzzzzzzzz\watercolor-om-tattoo-for-men-on-upper-chest.jpg" alt=""></span></div>
+        <div class="image" data-name="Neck"><span><img src="zzz61BYsgH6g+L._SL1238_.jpg" alt=""></span></div>
+        <div class="image" data-name="Leg"><span><img src="zzzzzzzzzzzzzz\Om-Symbol-Tattoo-115.jpg" alt=""></span></div>
+      <div class="image" data-name="Hand"><span><img src="zzzzzzzzzzzzzz\Om-Tattoo-Designs-11.jpg" alt=""></span></div>
+      <div class="image" data-name="Back"><span><img src="zzzzzzzzzzzzzz\spiritual-om-tattoo-top-of-back.jpg" alt=""></span></div>
+      <div class="image" data-name="Leg"><span><img src="zzzzzzzzzzzzzz\Geometric-Tattoo-Design-1.jpg" alt=""></span></div>
+      <div class="image" data-name="Neck"><span><img src="zzzzzzzz.jpg" alt=""></span></div>
+      <div class="image" data-name="Arm"><span><img src="zzzzzzzzzzzzzz\mens-hinduism-sleeve-tattoo-with-om-design-in-black-ink.jpg" alt=""></span></div>
+      <div class="image" data-name="Back"><span><img src="zzzzzzzzzzzzzz\d5s94fz-4569566f-97eb-47e1-a136-d486896b7b5a.jpg" alt=""></span></div>
+      <div class="image" data-name="Chest"><span><img src="zzzzzzzzzzzzzz\Om-Symbol-Tattoo-102.jpg" alt=""></span></div>
+      <div class="image" data-name="Chest"><span><img src="zzzzzzzzzzzzzz\unnamed.jpg" alt=""></span></div>
+      <div class="image" data-name="Neck"><span><img src="zzzzzzzzzzzzzz\160-1-2-1-1.jpg" alt=""></span></div>
+      
+    </div>
+  </div>
+  <div class="sriyantra" id="sriyantra">
+  <div class="wrapper">
+    <!-- filter Items -->
+    
+    <h1>Symbol of Sri Yantra</h1>
+    <p>Sri Yantra is a symbol that represents the spiritual journey that refers to the passage of time and the life experiences that appear to us throughout life and which help us to grow. It is a symbol with an exciting and sophisticated result, although it is not very difficult to tattoo and the final result can be beautiful.</a></p></p>
+    <nav>
+      <div class="items">
+        <span class="item active" data-name="all">All</span>
+        <span class="item" data-name="Hand">Hand</span>
+        <span class="item" data-name="Neck">Neck</span>
+        <span class="item" data-name="Chest">Chest</span>
+        <span class="item" data-name="Leg">Leg</span>
+        <span class="item" data-name="Back">Back</span>
+        <span class="item" data-name="Arm">Arm</span>
+      </div>
+    </nav>
+    <!-- filter Images -->
+    <div class="gallery">
+        <div class="image" data-name="Hand"><span><img src="zzzzzzzzzzzzzz\sri-yantra-tattoo.jpg" alt=""></span></div>
+        <div class="image" data-name="Back"><span><img src="zzzzzzzzzzzzzz\sri-yantra-tattoo-on-back.jpg" alt=""></span></div>
+         
+        <div class="image" data-name="Leg"><span><img src="zzzzzzzzzzzzzz\hindu-tattoos.jpg" alt=""></span></div>
+      <div class="image" data-name="Hand"><span><img src="zzzzzzzzzzzzzz\sri-yantra-tattoo-on-hand.jpg" alt=""></span></div>
+      <span id="Check_this_out_Choosing_a_Superman_Tattoo">Check this out: <a href="https://tattooli.com/choosing-a-superman-tattoo/">Choosing a Superman Tattoo</a></span>
+      
+    </div>
+  </div>
+</div>
+
+<div class="Henna" id="Henna">
+  <div class="wrapper">
+ <!-- filter Items -->
+    
+ <h1>Henna</h1>
+ <p>As mentioned earlier, tattoos with henna on the bodies of women who marry in India are prevalent. They are usually tattooed on hands and feet because it is said to bring good luck and help create a healthy marriage.
+     <br>People who feel admiration for Hindu culture often find a problem, since most symbols have many meanings and it can be challenging to decide on one of them. What many people choose is to tattoo numerous designs, which can be quickly joined, although you can not fall into the error of tattooing a very stylish design, since each of these symbols has many details, tracings and colours.
+ <br>Mention that most of these tattoos have small dimensions, so they tend to fit naturally in almost all areas of the body, the areas that I recommend for these types of designs are the ankle, wrist and neck mainly, although you can always innovate.</a></p></p>
+ <p>meaning, in this way, the feeling prevails, and you will hardly get bored or regret it. Think very well what you would like to say with your design, and if you can not decide, you could lean on the symbolism of different cultures around the world.
+    <span id="Check_this_out_Choosing_a_Superman_Tattoo">Check this out: <a href="https://tattooli.com/choosing-a-superman-tattoo/">Choosing a Superman Tattoo</a></span>
+    There are beautiful designs that contain a whole history and language in their forms, and the Hindu culture uses them a lot to represent ideologies, traditions and religion.
+    Some even say that Hinduism, more than any other religion, is imbued with symbols and use them with high effectiveness to talk about their philosophy, teachings and of course, their gods.</p>
+  
+ <!-- filter Images -->
+ <div class="gallery">
+     <div class="image" data-name="Hand"><span><img src="zzzzzzzzzzzzzz\Hindu-symbolism.jpg" alt=""></span></div><br>
+     <p>The Hindu symbolism is divided into many categories, but two of the most general are based on the position of the hands and body (mudras) as well as the icons and drawings (mutri). It is almost always associated with human values and qualities such as beauty, purity, strength, courage, balance and more. For that reason, we show you some designs inspired by the Hindu culture, and we explain its meaning to you, so maybe you encourage yourself at the end to leave a mark on your body; but do not worry, we also have some temporary suggestions, in case you still do not feel very safe. <br>
+
+        Another good read: Vampire Tattoo Design Ideas Based on Dracula, Elizabeth Bathory, Count Chocula and Others <br>
+        
+        The world of tattooing has become a cultural phenomenon, in which each person wears a drawing for aesthetic or traditional reasons. Many people turn to tattoos fascinated by the unique and attractive look they offer <br>
+        
+        Hindu symbols refer to all the symbology related to the Hindu religion, predominant in the Indian subcontinent (India, Pakistan, Bangladesh, Nepal, Bhutan, Sri Lanka and the Maldives) and in addition to religious symbols and elements, also of craftsmanship and the architecture or the decorative arts of the area. <br>
+        There is a lot of ignorance about Hinduism, many Westerners are attracted by the fascination of their figures and sizes, colours and exotic names, but you have to take special care before tattooing something you do not know. Study carefully and investigate what you want to tattoo, since you may discover over time that what you thought you meant or honoured a thing, is just the opposite. Hindu tattoos for women and men have a richness both visual and aesthetic in terms of meaning and symbolism.</p> <br>
+     <br>
+     <a href="https://tattooli.com/how-much-time-is-needed-to-a-full-sleeve-tattoo/">do you kno ? How Much Time Is Needed To A Full Sleeve Tattoo?</a>
+     <p></p> It is essential to carefully study the meanings of Hindu tattoos, their traditions and the stories behind each symbol. Hinduism is a very ancient and complicated religion with many logos that you can add to your tattoo, but that you should try to know and understand, so as not to tattoo your nonsense.</p>
+     
+     <div class="image" data-name="Hand"><span><img src="zzzzzzzzzzzzzz\henna-tattoo-design.jpg" alt=""></span></div>
+     <div class="image" data-name="Leg"><span><img src="zzzzzzzzzzzzzz\hand-henna-tattoo.jpg" alt=""></span></div>
+   <div class="image" data-name="Hand"><span><img src="zzzzzzzzzzzzzz\henna-tattoo.jpg" alt=""></span></div>
+   <div class="image" data-name="Hand"><span><img src="zzzzzzzzzzzzzz\image-asset.jpeg" alt=""></span></div>
+   
+ </div>
+</div>
+</div>
+
+<div class="Shiva" id="Shiva">
+<div class="wrapper">
+    <!-- filter Items -->
+    <h1>Shiva Tattoos</h1><br>
+    <h2>Shiva tattoos represent one of the most important gods we can find in Hindu symbols. Shiva is the god that destroys and purifies, it is essential in the Hindu religion, and its representation is full of symbolism and tradition.
+    <br> It should be noted that in many of the representations that we see of Shiva in statuettes, engravings or reliefs in stone, we find patterns that should be considered when designing Shiva’s tattoo more similar and faithful to reality. </h2>
+    <br>
+    <h3>For example, the third eye is very characteristic, represents the wisdom of Shiva and his ability to see beyond the obvious, these Hindu tattoos have a meaning related to knowing how to detect evil and bad intentions to avoid them.</h3>
+    <p>The cobra necklace, which is often depicted with snake tattoos that surround Shiva’s torso, represents the power of this god beyond death. Tells the story that Shiva took poison to avoid evil in the Universe when he took it, his wife Parvati tied a poisonous cobra to her neck to avoid being hurt by the poison, and for this reason, Shiva is blue.</a></p></p>
+    
+    <!-- filter Images -->
+    <div class="gallery">
+        <div class="image" data-name="Hand"><span><img src="zzzzzzzzzzzzzz\Shiva-symbol-tattoo.jpg" alt=""></span></div>
+        <div class="image" data-name="Back"><span><img src="zzzzzzzzzzzzzz\Shiva-Tattoo.jpg" alt=""></span></div>
+        <div class="image" data-name="Leg"><span><img src="zzzzzzzzzzzzzz\geometric-Shiva-Tattoo.jpg" alt=""></span></div>
+        <div class="image" data-name="Leg"><span><img src="zzzzzzzzzzzzzz\61R4vDNiG+L._SL1100_.jpg" alt=""></span></div>
+      <p>The serpent that surrounds Shiva is a clear representation of danger and death; Shiva is known as the lord of the snakes as he drives and carries the dangerous cobra with all tranquillity. <br>
+        We see many moons tattoos combined with Shiva tattoos; this is because traditionally he has a half moon on his forehead, near the third eye, which represents the power to create and destroy, as well as controlling time, since the Moon It is a measure of time. For this reason, we also know Shiva as the god of the Moon.</p>
+    </div>
+  </div>
+</div>
+<h4><span id="Did_you_know_148_Ideas_Ancient_Greek_Gods_Tattoos">Did you know: <a href="https://tattooli.com/148-ideas-ancient-greek-gods-tattoos/">148 Ideas – Ancient Greek Gods Tattoos</a></span></h4>
+
+<div class="Ganesha tattoos" id="Ganesha tattoos"> 
+<div class="wrapper">
+    <!-- filter Items -->
+    <h1>Ganesha tattoos</h1><br>
+    <p> Tattoos of elephants delights the most daring because of its size and the number of nuances and richness in texture that we can recreate in the skin, we see this animal very often, both in geometric tattoos, where it is usually represented front because it is very characteristic for the size of its ears and the big trunk, as in the symbols new school where bright colours and thick lines let us see large pieces tattooed.
+    <br> If there is one recognised and tattooed elephant in the whole world it is Ganesha, a Hindu deity with a human body and elephant head that has four arms. The tattoos of Ganesha are reverence to this goddess of Arts and Sciences to which the Hindu revere as it also helps them overcome obstacles and difficulties. </p>
+    <br>
+    <h3>Ganesha tattoos have an evident influence of Hindu art since we can see a lot of tapestries, engravings and reliefs with different figures of Ganesha, as well as a wide variety of statues.
+    <p>The tradition of Hindu tattoos inspires the position and the symbolism that usually surrounds Ganesha’s symbols, but many tattoo artists have been incorporating and adding elements that we already consider good and valid even if they do not make any sense.
+
+    </a> 
+    
+    <!-- filter Images -->
+    <div class="gallery">
+        <div class="image" data-name="Hand"><span><img src="https://i.pinimg.com/564x/29/34/1b/29341b8e0417057a2597dc9d34a9ad9b.jpg" alt=""></span></div>
+        <div class="image" data-name="Back"><span><img src="https://i.pinimg.com/564x/b9/63/6c/b9636c31340a1e652705bcdf685088d6.jpg" alt=""></span></div>
+        <div class="image" data-name="Leg"><span><img src="https://i.pinimg.com/564x/18/15/d9/1815d92cf79313b69e27569a0610e49c.jpg" alt=""></span></div>
+        <div class="image" data-name="Leg"><span><img src="https://i.pinimg.com/736x/58/77/f3/5877f3b1d103f0d013fdee3e203d47a8.jpg" alt=""></span></div>
+      <p>For example, we see tattoos in Arabic surrounding with phrases the goddess Ganesha, when usually the sacred writings are in Sanskrit (the classical language of India). Another custom in the Hindu tattoos of the goddess Ganesha is to surround her with symbols of the lotus flower, something that we do see in some modern representations of the goddess <br>
+        Ganesha is not only the patron of arts and sciences, but he is also the god of intelligence, wisdom and letters. It is revered as a deterrent to obstacles, and there is a legend that tells its story; However, the shape of its head refers to the qualities of the elephant, wise and robust animals, that do not walk around obstacles or stop them, but remove them from the middle and continue walking.</p>
+    </div>
+  </div>
+</div>
+  <div class="Lotus" id="Lotus"> 
+  <div class="wrapper">
+    <!-- filter Items -->
+    <h1>Inspired by the Lotus Flower</h1><br>
+    <p> The lotus flower emerges from the swampy waters and symbolises the purity of the body and soul. The muddy water is associated with the attachment and sexual desires, and the bright flower that blooms in the water represents purity and spiritual elevation.</p>
+    <br>
+ 
+    
+    <!-- filter Images -->
+    <div class="gallery">
+        <div class="image" data-name="Hand"><span><img src="zzzzzzzzzzzzzz\Lotus-Flower-tattoo.jpg" alt=""></span></div>
+        <div class="image" data-name="Back"><span><img src="zzzzzzzzzzzzzz\realistic-Lotus-Flower-tattoo.jpg" alt=""></span></div>
+         
+      </div>
+    </div>
+  </div>
+
+  <div class="Hamsa-tattoos" id="Hamsa-tattoos"> 
+  <div class="wrapper">
+    <!-- filter Items -->
+    <h1>Inspired by the Hamsa</h1><br>
+    <p> Also known as the hand of Fatima, this symbol and amulet has been used in different regions of the world and has been attributed to different meanings according to culture. In Hinduism, it is associated with protection and also with one of the main mudras, the Abhaya, which symbolises protection, peace, and the dissipation of fear.</p>
+     
+ 
+    
+    <!-- filter Images -->
+    <div class="gallery">
+        <div class="image" data-name="Hand"><span><img src="zzzzzzzzzzzzzz\3d-hamsa-tattoo.jpg" alt=""></span></div>
+        <div class="image" data-name="Back"><span><img src="zzzzzzzzzzzzzz\hamsa-tattoo-on-hand.jpg" alt=""></span></div>
+        <div class="image" data-name="Hand"><span><img src="zzzzzzzzzzzzzz\hamsa-tattoo.jpg" alt=""></span></div> 
+        <div class="image" data-name="Hand"><span><img src="zzzzzzzzzzzzzz\hamsa-tattoo-10.webp" alt=""></span></div>
+    </div>
+  </div>
+</div>
+  <div class="mandalas-tattoos" id="mandalas-tattoos"> 
+  <div class="wrapper">
+    <!-- filter Items -->
+    <h1>Inspired by the mandalas</h1><br>
+    <p> The mandala originates in India and is used in both Buddhism and Hinduism. They are diagrams or symbolic representations that are used for meditation and each of the elements that confirm them have a meaning, both shapes and colours</p>
+     
+    <!-- filter Images -->
+    <div class="gallery">
+        <div class="image" data-name="Hand"><span><img src="zzzzzzzzzzzzzz\mandala-tattoo-on-back.jpg" alt=""></span></div>
+        <div class="image" data-name="Back"><span><img src="zzzzzzzzzzzzzz\mandala-tattoo.jpg" alt=""></span></div>
+        <div class="image" data-name="Hand"><span><img src="zzzzzzzzzzzzzz\shoulder-mandala-tattoo.jpg" alt=""></span></div> 
+        <div class="image" data-name="Hand"><span><img src="zzzzzzzzzzzzzz\sleeve-mandala-tattoo (2).jpg" alt=""></span></div> 
+      </div>
+    </div>
+  </div>
+
+  <div class="Unalome-tattoos" id="Unalome-tattoos">
+  <div class="wrapper">
+    <!-- filter Items -->
+    <h1>Inspired by the Unalome</h1><br>
+    <p> It is a symbol that represents wisdom and the path to enlightenment. It has its origin in Hinduism, is very similar in form and meaning to the third eye of the god Shiva (also called Urn). The spiral is the beginning of the path, while each fold or knot represents the errors; the straight line means the direct route to nirvana.</p>
+     
+    <!-- filter Images -->
+    <div class="gallery">
+        <div class="image" data-name="Hand"><span><img src="zzzzzzzzzzzzzz\unalome-tattoo-design.jpg" alt=""></span></div>
+        <div class="image" data-name="Back"><span><img src="zzzzzzzzzzzzzz\unalome-tattoo.jpg" alt=""></span></div>
+        <div class="image" data-name="Hand"><span><img src="zzzzzzzzzzzzzz\unalome-tattoo-on-back.jpg" alt=""></span></div> 
+      </div>
+    </div>
+  </div>
+
+  <div class="Indian elephant-tattoos" id="Indian elephant-tattoos"> 
+  <div class="wrapper">
+    <!-- filter Items -->
+    <h1>Indian elephant tattoos – The best choice for Hindu tattoos.</h1><br>
+    <p> Most of the tattoos that you will see in this collection have in common the elephants, since in India they are ubiquitous and they are an animal very dear to the Indians, so in tattoos, they are very used.In addition to the elephant, the symbol of OM is the most repeated in Hindu tattoos. It is a sacred symbol in Hinduism and also Buddhism. It symbolises Brahman We recommend you to get a tattoo to finish on the Hanuman, the monkey god since he is the most outstanding representative of the vanaras, a race of monkey men that lived in the forest in the south of India. That is to say, the vanaras have a monkey face and a monkey body, but they have intellect, speaking ability and other typically human ones. According to some versions, it is said that the vanaras were children of gods that took an animal form. The truth is that they were undoubtedly brave, great warriors, faithful, honest and gentle.</p>
+     
+    <!-- filter Images -->
+    <div class="gallery">
+        <div class="image" data-name="Hand"><span><img src="zzzzzzzzzzzzzz\Indian-elephant-tattoo.jpg" alt=""></span></div>
+        <div class="image" data-name="Back"><span><img src="zzzzzzzzzzzzzz\realistic-Indian-elephant-tattoo.jpg" alt=""></span></div>
+        <div class="image" data-name="Hand"><span><img src="zzzzzzzzzzzzzz\Indian-elephant-tattoo-for-women.jpg" alt=""></span></div> 
+         
+      </div> 
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <div class="Healthline" id="Healthline"> 
+    <div class="wrapper">
+      <!-- filter Items -->
+      <h1>What You Need to Know Before Getting a Tattoo</h1> 
+      <p>Most tattoos have a story. Your artist can create a touching tribute to a loved one or illustrate an inside joke you have with your friends — but underlying meaning is never a requirement to getting inked.
+
+       <br><br> What’s important is that you walk away from your session happy with the art that’s permanently etched into your skin. And whether it’s your first or fifth time, this feeling is never a guarantee when you’re considering a new tattoo.
+        
+        <br><br> But there are steps you can take to ensure that you walk away loving your new artwork and that it’s healthy. We’ve rounded up everything you need to know to make your experience as easy, painless, and regret-free as possible.</p>
+        <h1> What to know before you head to the shop</h1> 
+       <p>Above all else, you have to know what imagery you want. Do you want something floral? A portrait? Abstract blots of color? Or maybe you just want some simple script?</p>
+      
+      <!-- filter Images -->
+      <div class="gallery">
+        <div class="image" data-name="Hand"><span><img src="https://i.pinimg.com/564x/c8/22/46/c822464154d25033de2a988c8d04e4d6.jpg" alt=""></span></div>
+          <div class="image" data-name="Hand"><span><img src="https://i.pinimg.com/564x/d7/3e/8a/d73e8aa5c7fc98dfc1cc7068d3426ddc.jpg" alt=""></span></div>
+          <div class="image" data-name="Back"><span><img src="https://i.pinimg.com/736x/fb/1f/12/fb1f1279e27b9b84de70019dbff153a3.jpg" alt=""></span></div>
+          <div class="image" data-name="Hand"><span><img src="https://i.pinimg.com/564x/5d/2f/fd/5d2ffdb492ba18f15229a82afeb813f6.jpg" alt=""></span></div> 
+        </div>
+          <br> <p>It’s important to have your core idea fleshed out before setting up a consultation — unless you’re coming in for lettering, which often only requires you to decide on a font. During the consultation, your artist can work out the finer details. You can show them any images you’ve saved as inspiration and figure out placement and pricing.
+
+ <br> Depending on the time they have available, the artist may create a mock-up of your tattoo on the spot or a few days later, but ultimately, the final results will depend on several factors:</p>
+  <br>
+    <ul> 
+     <li>how much of your body you want to dedicate to the art</li>
+     <li>how feasible the tattoo placement is</li>
+  <li>how well the colors you want will show up on your skin tone</li>
+  <li>how much time you want to spend with the artist</li></ul>
+  
+<br><p> Here’s more on what you should consider when designing your next tattoo:</p>
+<div class="STYLE" id="STYLE"> 
+<h1>STYLE</h1>
+<p>Once you’ve decided what you want tattooed, you have to figure out how you want it to look. There are a ton of different tattooing styles, and you’ll want to go to an artist who’s skilled in the look you’re after.
+<br>
+  Some of the most popular styles include:
+  <br>
+  <br>
+  <ul class="hl-long-line"><li><strong>American traditional.</strong> Characterized by clean, black outlines and the primary color palette, this style commonly features skulls and roses.</li><li><strong>Traditional Japanese.</strong> Inspired by traditional Japanese artwork, this style’s clean lines and minimal shading are often used to create tigers, koi fish, and flowers.</li><li><strong>Realism.</strong> The goal of this style is to recreate subjects using shading and color contrast, as they appear in real life.</li><li><strong>Illustrative.</strong> By combining aspects of traditional tattooing and realism, this style is about bold outlines and intense color saturation.</li><li><strong>Neo-traditional.</strong> A modernized take on American traditional imagery, this style leans heavily on shading and color to create realistic portraiture.</li><li><strong>Minimalism or geometric. </strong>With a focus on crisp black lines and negative space, this style is about precision. The results are often simple and symbolic.</li></ul>
+<br>But you don’t need to be familiar with the lingo to get one of these styles. Browsing Instagram is incredibly helpful, as most artists post their work on their own channel and to a hashtag feed. If, for example, you’ve decided you want to get a tattoo of a cat, a quick #cattattoo search pulls up over 220,000 results.
+
+Save the images you like most and show them to your artist during your consultation. They can use these as inspiration to create a one-of-a-kind piece of your own.
+</p>
+</div>
+<div class="Design" id="Design"> 
+<h1>Design</h1>
+
+<p>
+  Many people opt for pure illustration, but if you want script — standalone or alongside an image — you’ll need to figure out what kind of font you want.
+
+ <br> Adobe Typekit is a great place to look up font styles, offering everything from handwriting to typewriter. The site even lets you see your text of choice in the font you’re considering so that you can actually visualize how it might look on your body.
+  
+  <br> If you see something you like, print out a couple of different versions to bring to your artist. They may not have your exact font on their computer, so they can use these pages as a reference.
+</p>
+</div>
+<div class="Color" id="Color"> 
+<h1>Color</h1>
+  
+ <p>  Although the style of tattoo often dictates the color palette, the artist can work with you to modify the design and style to better suit what you want.
+  
+  <br>That said, your skin tone plays a big role in how well individual colors will hold. For example, fair skin tends to hold white ink better than other skin tones. Red and purple pigments are also more vibrant on fairer skin tones.
+  
+  <br> Darker skin tones typically hold darker colors — think crimson red and royal blue — better than lighter hues. Having darker skin doesn’t mean that you can’t get pastels or other light hues, just that these options usually don’t appear as pigmented as darker colors might.
+  
+  <br> Greyscale is also an option. With this style, your artist will use a mix of pure black, watered-down black, and white ink to create the appropriate shades and hues.
+ 
+ 
+ 
+<br>
+<br>
+<span style="font-size: 0px; line-height: 0;"></span><div class="css-zr4wb2"><div class="css-55guol"><h3 class="icon-hl-check-thin css-1v0jij4"> Tattoo color guide<br></h3><div class="css-ygw4tr"><ul class="pro-con--pro-list"><li>Lighter colors show up brighter on fairer skin tones, especially white, purple, and red.</li><li>Richer colors hold better on darker skin tones than pastel colors.</li><li>All colors will fade over time.</li></ul></div></div><div><div class="css-pzg5fr"></div></div></div><div class="css-1enc0ig"><svg alt="Healthline" width="75" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 48"><path fill="#E1BE83" d="M39.452 46.66H25.095V23.881c0-2.394-1.713-3.929-3.73-3.929-1.96 0-4.325 1.596-4.325 3.93v22.776H4.154V10.376L0 7.429C4.748 5.832 12.707 2.394 17.04 0v19.032c1.72-2.149 5.926-4.911 11.268-4.911 6.765 0 9.673 4.481 9.673 9.823v19.23c0 .578.49 1.74 1.47 3.485zm147.981 0h-14.356V23.881c0-2.394-1.714-3.929-3.731-3.929-1.959 0-4.325 1.596-4.325 3.93v22.776h-12.885V10.376l-4.155-2.947C152.73 5.832 160.69 2.394 165.021 0v19.032c1.721-2.149 5.927-4.911 11.268-4.911 6.765 0 9.673 4.481 9.673 9.823v19.23c0 .578.49 1.74 1.471 3.485zM70.835 41.241v2.273C67.978 45.973 64.823 48 58.038 48c-10.714 0-17.262-7.188-17.262-16.034 0-10.566 6.726-17.754 16.607-17.754 9.761 0 13.452 6.696 13.452 15.113H52.99c.773 9.706 6.177 14.129 11.118 14.129 2.38 0 5.059-.799 6.726-2.212zM56.773 27.415c2.872 0 3.2-.818 3.2-3.22 0-1.842-.328-6.382-3.2-6.382-2.872 0-3.2 4.54-3.2 6.382 0 2.402.328 3.22 3.2 3.22zM300 41.233v2.273c-2.857 2.457-6.012 4.485-12.797 4.485-10.714 0-17.261-7.188-17.261-16.034 0-10.566 6.726-17.754 16.606-17.754 9.762 0 13.452 6.696 13.452 15.112h-17.844c.774 9.707 6.178 14.13 11.118 14.13 2.381 0 5.06-.799 6.726-2.212zm-14.061-13.827c2.871 0 3.199-.819 3.199-3.22 0-1.842-.328-6.382-3.2-6.382-2.871 0-3.199 4.54-3.199 6.381 0 2.402.328 3.22 3.2 3.22zM107.25 40.962l1.425.303C108.023 43.9 106.123 48 100.011 48c-5.104 0-6.536-3.133-7.605-6.45-.89 3.071-4.384 6.45-11.03 6.45-5.935 0-9.2-2.642-9.2-7.618 0-5.528 5.393-9.583 18.865-13.576V20.97c0-3.01-1.602-4.055-3.382-4.055-1.603 0-4.147 1.72-4.147 4.423 0 1.29.237 2.273.415 3.563 0 1.66-1.899 4.178-4.807 4.178-3.205 0-4.748-2.335-4.748-5.038 0-4.423 4.095-9.829 14.837-9.829 11.158 0 14.719 5.898 14.719 11.55V40.75c0 .921.356 1.843 1.365 1.843.89 0 1.496-.506 1.957-1.632zM91.112 39.83V28.7c-4.514 1.834-6.076 6.36-6.076 9.846 0 2.813.868 4.098 2.951 4.098 1.823 0 3.125-1.162 3.125-2.814zm34.59 6.83h-14.82V10.376l-3.95-2.947c4.513-1.597 12.807-5.035 16.925-7.429v43.173c0 .552.615 1.714 1.846 3.486zm81.217 0h-14.821V10.376l-3.95-2.947c4.514-1.597 12.807-5.035 16.926-7.429v43.173c0 .552.615 1.714 1.845 3.486zm-58.992-3.76v2.274c-2.16 1.844-5.74 2.827-9.605 2.827-6.365 0-8.582-4.732-8.582-8.726V17.922h-3.07l16.142-14.168V15.43h5.115v2.492h-5.115v23.134c0 1.843 1.08 2.704 2.387 2.704.796 0 2.217-.369 2.728-.86zm71.309-29.19c-3.669 0-6.592-3.04-6.592-6.854 0-3.815 2.923-6.855 6.592-6.855 3.668 0 6.592 3.04 6.592 6.855 0 3.815-2.924 6.855-6.592 6.855zm8.676 32.95h-15.13V23.814l-4.164-2.955c4.759-1.601 12.738-5.05 17.08-7.451v29.765c0 .573.738 1.735 2.214 3.486zm41.062 0H254.15V23.814c0-2.401-1.713-3.94-3.73-3.94-1.959 0-4.325 1.6-4.325 3.94V46.66H233.21V23.814l-4.154-2.955c4.748-1.601 12.369-5.05 16.701-7.451v6.28c2.136-2.832 6.266-5.664 11.607-5.664 6.765 0 9.673 4.495 9.673 9.852v19.297c0 .563.646 1.725 1.937 3.486z"></path></svg></div>
+ 
+
+<br> Remember, all colors — including black — will fade over time. You can search online for examples of tattoo appearance over time to get an idea of how yours may look one to five years from now.
+</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+  <div class="GALLERY" id="GALLERY">
+  <div class="wrapper"> 
+<h1> GALLERY </h1>
+
+  <div class="gallery">
+    <div class="image" data-name="Hand"><span><img src="https://tattooli.com/wp-content/uploads/2019/04/4e17f254e17e8682d26404e1e7839802-Copy.jpg" alt=""></span></div>
+    <div class="image" data-name="Back"><span><img src="https://tattooli.com/wp-content/uploads/2019/04/5a6baf68019b88f39248dd5bfee24dc4-Copy.jpg" alt=""></span></div>
+    <div class="image" data-name="Hand"><span><img src="https://tattooli.com/wp-content/uploads/2019/04/6f66e0032dae11593e4a49c4db338301-Copy.jpg" alt=""></span></div> 
+    <div class="image" data-name="Hand"><span><img src="https://tattooli.com/wp-content/uploads/2019/04/7d1c64046c5804ce8bf0a39cdc3dcae4-Copy.jpg " alt=""></span></div>
+    <div class="image" data-name="Back"><span><img src=" https://tattooli.com/wp-content/uploads/2019/04/018cfa414e8c31164625019305e240d8-Copy.jpg" alt=""></span></div>
+    <div class="image" data-name="Hand"><span><img src="https://tattooli.com/wp-content/uploads/2019/04/282b1420bebefdbb31c582b9f6a296b0-Copy.jpg " alt=""></span></div> 
+    <div class="image" data-name="Hand"><span><img src="https://tattooli.com/wp-content/uploads/2019/04/232f13cf1cd3a8407c6274ddae9d6b94-Copy.jpg " alt=""></span></div>
+    <div class="image" data-name="Back"><span><img src="https://tattooli.com/wp-content/uploads/2019/04/613bb5739ac292ccd864c18c151f1305-Copy.jpg " alt=""></span></div>
+    <div class="image" data-name="Hand"><span><img src=" https://tattooli.com/wp-content/uploads/2019/04/1978f912067f4f41733e48c64c5de969-Copy.jpg" alt=""></span></div> 
+    <div class="image" data-name="Hand"><span><img src=" https://tattooli.com/wp-content/uploads/2019/04/56819346528ced28f1a063025f08aebd-Copy.jpg" alt=""></span></div>
+    <div class="image" data-name="Back"><span><img src="https://tattooli.com/wp-content/uploads/2019/04/c9c72d3f857eebeab7aaa0004ed9ac3f-Copy.jpg" alt=""></span></div>
+    <div class="image" data-name="Hand"><span><img src="https://tattooli.com/wp-content/uploads/2019/04/dea374905d177967f130604801f2da79-Copy.jpg" alt=""></span></div> 
+    <div class="image" data-name="Hand"><span><img src="https://tattooli.com/wp-content/uploads/2019/04/e028532a6660c04f95c1554797b53734-Copy.jpg" alt=""></span></div>
+    <div class="image" data-name="Back"><span><img src="https://tattooli.com/wp-content/uploads/2019/04/f1f71766b40c0856497a9c88d3664e64-Copy-768x768.jpg" alt=""></span></div>
+    <div class="image" data-name="Hand"><span><img src="https://tattooli.com/wp-content/uploads/2019/04/f128893308d3d68926b6982b9599fd9e-Copy.jpg" alt=""></span></div> 
+    <div class="image" data-name="Hand"><span><img src="https://tattooli.com/wp-content/uploads/2019/04/fc577d69daafb637a138e7653b1df15e-Copy.jpg " alt=""></span></div>
+    <div class="image" data-name="Hand"><span><img src="https://i.pinimg.com/564x/60/70/9c/60709c1f08df4d35fea8d609561ed2f2.jpg " alt=""></span></div>
+
+  </div>
+</div>
+</div>
+
+
+  
+
+ 
+
+  <script src="script.js"></script>
+
+</body>
+</html>

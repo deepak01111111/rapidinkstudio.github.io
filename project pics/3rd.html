@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    background-color: black;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.container {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+.time-left {
+  float: left;
+  color: #999;
+}
+.btn-group button {
+  background-color: #04AA6D; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #000000;
+}
+</style>
+</head>
+<body>
+
+<h2>Chat  </h2>
+
+<div class="container">
+  <img src="/w3images/bandmember.jpg" alt="Avatar" style="width:100%;">
+  <p>Thank you! We will match your design with the right tattoo style. </p>
+  <span class="time-right">11:00</span>
+</div>
+
+<div class="container darker">
+  <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="right" style="width:100%;">
+  <p>Tattoo Placement:
+
+    What general area on your body would you like your tattoo?.</p>
+  <span class="time-left">11:01</span>
+</div>
+
+<div class="container">
+  <img src="/w3images/bandmember.jpg" alt="Avatar" style="width:100%;">
+  <p>Which specific area?</p>
+  <span class="time-right">11:02</span>
+</div>
+<div class="btn-group">
+    <li><a href=" helpmate.html"><button>Hand </button></a></li>
+    <li><a href=" helpmate.html"><button>Neck</button></a></li>
+    <li><a href=" helpmate.html"><button>Back</button></a></li>
+    <li><a href=" helpmate.html"><button>Arms</button></a></li>
+    <li><a href=" helpmate.html"><button>Hands/Fingers</button></a></li>
+    <li><a href=" helpmate.html"><button>Buttocks</button></a></li>
+    <li><a href=" helpmate.html"><button>Legs/Feet</button></a></li>
+   </div>
+<div class="container darker">
+    <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="right" style="width:100%;">
+    <p>The following questions will help us get back to you about your tattoo as quickly as possible.</p>
+    <span class="time-left">11:01</span>
+  </div>
+  <div class="container darker">
+    <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="right" style="width:100%;">
+    <p>Note: If you need to you can come back to the form at any time and pick up where you left off..</p>
+    <span class="time-left">11:01</span>
+  </div>
+  <div class="container darker">
+    <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="right" style="width:100%;">
+    <p>Tattoo artist:
+
+        When it comes to choosing the right artist for your tattoo many of our customers are happy to leave the decision to us, while some already have a specific artist in mind</p>
+    <span class="time-left">11:01</span>
+  </div>
+ 
+
+
+   
+</body>
+</html>

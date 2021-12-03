@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 11px;
+  background-color: #000000;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+header{
+  position: fixed;
+  top: 0px;; left: 0; right:0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #d3d3d3;
+  padding:0rem 9%;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+header .logo{
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color:#666;
+   
+}
+header .text{
+  font-size: 1.8rem;
+  font-weight: bolder;
+  color:rgba(0, 0, 0, 0.295);
+   letter-spacing: 11px;
+}
+.glow {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgb(0, 247, 206), 0 0 20px rgb(0, 247, 206), rgb(0, 247, 206), 0 0 40px #e60000, 0 0 50px #e60000, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px rgb(255, 0, 0), 0 0 30px #ec0000, 0 0 40px #ee0404, 0 0 50px #ff0707, 0 0 60px #ff0000, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+header .logo img{
+  width:90px ;
+   
+   
+}
+header .navbar a{
+  font-size: 2rem;
+  margin-left: 2rem;
+  color:rgb(63, 63, 63);
+}
+
+header .navbar a:hover{
+  color:var(--red);
+}
+
+#menu-bar{
+  font-size: 3rem;
+  cursor: pointer;
+  color:#666;
+  border:.1rem solid #666;
+  border-radius: .3rem;
+  padding:.5rem 1.5rem;
+  display: none;
+}
+.bg-img {
+  /* The image used */
+  background-image: url("2920931.jpg");
+
+  min-height:780px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-decoration: underline;
+ 
+}
+ 
+ 
+ 
+
+
+/* Add styles to the form container */
+.container {
+  top: 72px;
+  position: absolute;
+  right: 0;
+  margin: 28px;
+  max-width: 493px;
+  padding: 19px;
+  background-color:  #d3d3d3;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #464646;
+  color: rgb(228, 228, 228);
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 10;
+  color: aqua;
+}
+</style>
+</head>
+<body>
+<div class="bg-img "></div>
+  <header>
+
+    <a href="rough .html" class="logo"><img src="download.png" alt ="LOGO"> 
+    <a href="rough .html" class="text"><h3>Rapid-ink-Studio</h3>
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+      <a href="homepage.html">home</a>
+      <a href="homepage.html">speciality</a>
+      <a href="homepage.html">popular courses</a>
+      <a href="homepage.html">our services</a>
+      <a href="homepage.html">review</a>
+      <a href="homepage.html">order</a>
+    </nav>
+
+</header>
+ 
+  <form action="https://formspree.io/f/xjvlbvrw"  method=post
+   class="container">
+     
+
+    <div class="row">
+      <div class="col-25">
+        <label for="Age">Age</label>
+      </div>
+      
+      <div class="col-75">
+        <select id="Age" name="Age">
+          <option value="18+">18+</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+        </select>
+      </div>
+    </div>
+    <label for="Name"><b>NAME</b></label>
+    <input type="text" placeholder="Enter Full Name" name="name" required>
+    
+    <label for="email"><b>Email / Phone no.</b></label>
+    <input type="text" placeholder="Enter Email or phone no." name="email" required>
+    <div class="row">
+      <div class="col-25">
+        <label for="Area">Area</label>
+      </div>
+      <div class="col-75">
+        <select id="Area" name="Area">
+          <option value="australia">uttrakhand</option>
+          <option value="canada">punjab</option>
+          <option value="usa">mumbai</option>
+        </select>
+      </div>
+    </div>
+    
+    
+    <label for="appointment-timing"><b>Appointment-timing</b></label>
+    <input type="text" placeholder="00:00" name="appointment-timing" required>
+    <label for="psw"><b>service id</b></label>
+    <input type="password" placeholder="Enter service id" name="psw" required>
+
+    <button type="submit" class="btn">Book My appointment</button>
+  </form>
+
+   
+
+</div>
+
+ 
+
+</body>
+</html>

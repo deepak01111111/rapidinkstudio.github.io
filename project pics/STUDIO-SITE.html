@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STUDIO-SITE</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <img src="download.png" alt="b-A-t.com">
+        <a href="rough .html" id="navbar__logo">Rapid-ink-Studio</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#services" class="navbar__links" id="services-page"
+              >Services</a
+            >
+          </li>
+          <li class="navbar__btn">
+            <a href="#sign-up" class="button" id="signup">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </nav> 
+
+ 
+
+    <!-- Chat Section -->
+    <button class="open-button" onclick="openForm()">Chat</button>
+    
+    <div class="chat-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <h1>Chat</h1>
+    
+         
+        <textarea placeholder="Type message.." name="msg" required></textarea>
+    
+        <button type="submit" class="btn">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+    
+    <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+      <div class="hero__container">
+        <h1 class="hero__heading">Choose your <span>tattoos</span></h1>
+        <p class="hero__description">Unlimited Possibilities</p>
+        <button class="main__btn"><a href="ideasubmit.html">Tattoo-Designs</a></button><br>
+        <iframe width="1400" height="305" src="https://www.youtube.com/embed/lBd0HP0G2QE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="main" id="about">
+      <div class="main__container">
+        <div class="main__img--container">
+          <div class="main__img--card"><img src= "tattoo pics\pexels-tima-miroshnichenko-5560578.jpg">  <i class="fas fa-layer-group"></i></div>
+        </div>
+        <div class="main__content">
+          <h1>What do we do?</h1>
+          <h2>We get history under ur skin</h2>
+          <p>Our Tattoo Shop Provides High-Quality Tattoo Designs for Your Personal Style</p>
+          <button class="main__btn"><a href=" PORTFOLIO.html">See Our Art-Work</a></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services" id="services">
+      <h1>Our Services</h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="Annotation 2021-11-22 012444.png" alt="">
+          <div class="content">
+               <h3>meaningful tattoos you should have</h3>
+            <a href="diamondgallry.html" class="btn">Open</a>   
+                   
+               
+               
+          </div>
+      </div>
+        
+        <div class="box">
+            <img src="zzzzzzzzzzzzzzAnnotation 2021-11-22 000121.png" alt="">
+            <div class="content">
+                <h3>How much a tattoo costs?</h3>
+                <p>How much a tattoo costs?
+
+                  Cost of a tattoo depends on various factors such as size, complexity of the design, placement and your artist preference,
+                    <br>however we suggest tattoos which will fit right into your budget.  </p>
+                <h4> Small budget for your favourite tattoo? </h4>
+                <a href="https://www.quora.com/How-much-does-this-tattoo-cost-in-India" class="btn">Open</a>
+                <p>We have got you covered. You can use our Monthly Payment Plan if you feel that you are running tight on your budget. Get inked now and pay later :). To know more click here</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="Annotation 2021-11-22 011949.png" alt="">
+            <div class="content">
+                <h3>Can I cover up my old tattoo</h3>
+                <h4>We specialise in it, we are known for it :)</h4>
+                <p>Carrying a bad or old tattoo can be mind disturbing, specially regrettable/unwanted tattoos like having names of ex-boyfriends or ex-girlfriends name or sign. Aliens tattoo have got you covered.
+                    <br>Cover up tattoos require very special skills and creativity and not many artists can do it. We have a team of artists who expertise in cover up tattoos. You can check out our cover up tattoo portfolio here.</p>
+                 
+                <a href="https://www.alienstattoo.com/tattoo-aftercare-guidelines" class="btn">Lets Discuss</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="Annotation 2021-11-22 012143.png" alt="">
+            <div class="content">
+                <h3>How painful is the tattoo?</h3>
+                <p>Tattooing is not a very painful process for the most of our body parts. It’s more of an experience than pain. Still to help you understand, let me tell you what women compare this level of pain to, waxing, they say it is much lesser than waxing or similar to it.
+                    <br>The pain is bearable, its easy and fun for most of the people. We have put a blog on this topic to help you understand what causes the pain, how much it is and what can be done to reduce it. Please click the following link to read </p>
+                 
+                <a href="https://faq.saniderm.com/knowledge-base/detailed-tattoo-pain-chart/" class="btn">Download PDF</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="Annotation 2021-11-22 012245.png" alt="">
+            <div class="content">
+                <h3>What is tattoo aftercare?</h3>
+                <p>Traditional tattoo aftercare is insanely complicated process to follow. It requires strong discipline to maintain it for the first week. But not the same with Aliens as we care about you :)
+                    <br>We use the most advanced tattoo aftercare system. Taking care of tattoos is no more a hassle. Just one wrap after the tattoo and you are good to go. You can travel, you can do your day-today work, no more cleaning 100 times, no more ‘cream-ing’ and ‘lotion-ing’ all day. Download a complete guide of Aliens Aftercare Process. </p>
+                 
+                <a href="http://www.smchealth.org/sites/main/files/file-attachments/tattooaftercare.pdf" class="btn" Download PDF download="">
+                  <img src="http://www.smchealth.org/sites/main/files/file-attachments/tattooaftercare.pdf" alt="Download PDF" width="104" height="142">
+                </a>
+                
+
+                 
+            </div>
+        </div>
+        <div class="box">
+          <img src="Annotation 2021-11-22 012848.png" alt="">
+          <div class="content">
+               
+              <p>Have more
+                  <br>  questions?  </p>
+               
+              <a href="http://127.0.0.1:5500/booking.html" class="btn">Talk To Us</a>
+          </div>
+      </div>
+      
+ <!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+  <div class="box-container">
+
+      <div class="box">
+        
+          <img src="ZZmaxresdefault.jpg" alt="">
+          <div class="content">
+              <h3>picture to painting</h3>
+              <p>upload your photo here and get the painting in few working days</p>
+              <h4>service id. 11116</h4>
+              <a href="#" class="btn">upload</a>
+          </div>
+      </div>
+      <div class="box">
+          <img src="ZHULKuRgE-NlE-NjRE-qBIxpWq_qNgPSs651oCX8pmD6Hyv0.webp" alt="">
+          <div class="content">
+              <h3> buy clay figures </h3>
+              <p>order MARVEL, DC,G.O.T e.t.c clay sculptures/toys/showpeice</p>
+              <h4>service id. 11117</h4>
+              <a href="#" class="btn">order now</a>
+          </div>
+      </div>
+      <div class="box">
+          <img src="z037eb1a3-0777-4a37-9701-14ebece955a9_photo-to-art-img.webp" alt="">
+          <div class="content">
+              <h3>personalized custom art</h3>
+              <p> Upload your photos and transform them into canvas ,framed prints, greeting cards,  iPhone cases</p>
+              <h4>service id. 11118</h4>
+              <a href="#" class="btn">order now</a>
+          </div>
+      </div>
+      <div class="box">
+          <img src="Z3098139-blur_close-up_hands_marker_news_newspaper_paper_pens_people_tattoos_writing.jpg" alt="">
+          <div class="content">
+              <h3>wall decor</h3>
+              <p>Select existing designs created by our Independent Designers and customize your art & wall décor with ease. Posters · Canvas Prints · Acrylic Art.</p>
+              <h4>service id. 11119</h4>
+              <a href="#" class="btn">order now</a>
+          </div>
+      </div>
+      <div class="box">
+          <img src="zart-logo-design-template-e90ee49de042b9b7fdddc24354c7cbd2_screen.jpg" alt="">
+          <div class="content">
+              <h3>Art Logo Ideas</h3>
+              <p> Looking for Art logo inspiration? Browse the best Art logo designs from artists big and small.  </p>
+              <h4>service id. 11120</h4>
+              <a href="#" class="btn">order now</a>
+          </div>
+      </div>
+      <div class="box">
+          <img src="Zscropt_T6.jpg" alt="">
+          <div class="content">
+              <h3> sketches of ur photos</h3>
+              <p>get pencil-sketches, paintings, art-work done in valuable prices</p>
+              <h4>service id. 11121</h4>
+              <a href="#" class="btn">order now</a>
+          </div>
+      </div>
+      <div class="box">
+          <img src="zlaptop-concept-selection-5.jpg" alt="">
+          <div class="content">
+              <h3>Cool Custom Art-designs</h3>
+              <p> Personalized artwork is so much more meaningful, which is why these customizable art gifts will be proudly displayed for years to come.</p>
+              <h4>service id. 11122</h4>
+              <a href="#" class="btn">order now</a>
+          </div>
+      </div>
+      <div class="box">
+          <img src="Z3098139-blur_close-up_hands_marker_news_newspaper_paper_pens_people_tattoos_writing.jpg" alt="">
+          <div class="content">
+              <h3>tattoo ideas</h3>
+              <p> Explore the best tattoo ideas and inspiration from Pinterest</p>
+              <h4>service id. 11123</h4>
+              <a href="#" class="btn">order now</a>
+          </div>
+      </div>
+       
+      </div>
+
+  </div>
+
+</section>
+
+<!-- gallery section ends -->
+
+    <!-- Features Section -->
+    <div class="main" id="sign-up">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>Book a Tattoo</h1>
+          <h2>Fill out form to book a tattoo appointment </h2>
+          <p>  </p>
+          <button class="main__btn"><a href="booking.html">BOOK-MY-TATTOO</a></button>
+        </div>
+        <div class="main__img--container">
+          <div class="main__img--card" id="card-2">
+            <img src= "tattoo pics\pexels-lucas-guimarães-5533981.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>About Us</h2>
+            <a href="/sign__up">How it works</a> <a href="/">Testimonials</a>
+            <a href="/">Careers</a> <a href="/">Terms of Service</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Contact Us</h2>
+            <a href="/">Contact</a> <a href="/">Support</a>
+            <a href="/">Destinations</a>
+          </div>
+        </div>
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Videos</h2>
+            <a href="/">Submit Video</a> <a href="/">Ambassadors</a>
+            <a href="/">Agency</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Social Media</h2>
+            <a href="/">Instagram</a> <a href="/">Facebook</a>
+            <a href="/">Youtube</a> <a href="/">Twitter</a>
+          </div>
+        </div>
+      </div>
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo">B-A-T</a>
+          </div>
+          <p class="website__rights">© B-A-T 2021. All rights reserved</p>
+          <div class="social__icons">
+            <a href="/" class="social__icon--link" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    
+  </body>
+</html>

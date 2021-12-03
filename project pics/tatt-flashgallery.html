@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+<style>
+ body {
+  background-image: url("https://i.pinimg.com/564x/58/4e/c1/584ec1468d65070b6ffc517af8f6cc62.jpg");
+  font-family: "Audiowide", sans-serif;
+  scroll-behavior: smooth;
+}
+.head h1{
+  color: rebeccapurple;
+  text-decoration:   underline;
+   text-align: center;
+  font-size: 35px;  
+}
+.head p{
+   color: aqua;
+}
+.head p:hover{
+  color: #e60073;
+}
+.container {
+    left: 60px;
+  position: relative;
+  width: 21%;
+  border: 10px;
+  border-radius: 100px;
+  
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 501px;
+  height: 400px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border: 20px;
+  border-radius: 120px;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+.text {
+  background-color: #161C3E;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+ 
+mark { 
+  background-color:  rgb(4, 0, 255);
+  color: black;
+}
+ 
+.glow {
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgb(0, 247, 206), 0 0 20px rgb(0, 247, 206), rgb(0, 247, 206), 0 0 40px #eba82d, 0 0 50px #e2e600, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px rgb(255, 255, 255), 0 0 30px #ff6b6b, 0 0 40px #ee0404, 0 0 50px #fcb1b1, 0 0 60px #d9ff00, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+article1 {
+  float: right;
+  padding: 20px;
+  width: 70%;
+  background-image: url(https://i.pinimg.com/564x/b0/4a/06/b04a06a46a13a3a0c9bfa6c33773dece.jpg);
+  height: 400px;  
+color: rgb(255, 255, 255);
+}
+article2 {
+  float: right;
+  padding: 20px;
+  width: 70%;
+  background-image: url(https://i.pinimg.com/564x/79/21/dc/7921dc280916fd09b8e83724f30218bb.jpg);
+  height: 400px;  
+color: rgb(255, 255, 255);
+}
+article3 {
+  float: right;
+  padding: 20px;
+  width: 70%;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9YWqOnXk5e5JFZKuHFYDTqPasVHLcxSptuMCB4VBCRG06789y98ZtU8_486VQbKrb93I&usqp=CAU);
+  height: 400px;  
+color: rgb(255, 255, 255);
+}
+article4 {
+  float: right;
+  padding: 20px;
+  width: 70%;
+  background-image: url(https://i.pinimg.com/564x/79/21/dc/7921dc280916fd09b8e83724f30218bb.jpg);
+  height: 400px;  
+color: rgb(255, 255, 255);
+}
+article5 {
+  float: right;
+  padding: 20px;
+  width: 70%;
+  background-image: url(https://i.pinimg.com/564x/79/21/dc/7921dc280916fd09b8e83724f30218bb.jpg);
+  height: 400px;  
+color: rgb(255, 255, 255);
+}
+article6 {
+  float: right;
+  padding: 20px;
+  width: 70%;
+  background-image: url(https://i.pinimg.com/564x/79/21/dc/7921dc280916fd09b8e83724f30218bb.jpg);
+  height: 400px;  
+color: rgb(255, 255, 255);
+}
+article7 {
+  float: right;
+  padding: 20px;
+  width: 70%;
+  background-image: url(https://i.pinimg.com/564x/79/21/dc/7921dc280916fd09b8e83724f30218bb.jpg);
+  height: 400px;  
+color: rgb(255, 255, 255);
+}
+article8 {
+  float: right;
+  padding: 20px;
+  width: 70%;
+  background-image: url(https://i.pinimg.com/564x/79/21/dc/7921dc280916fd09b8e83724f30218bb.jpg);
+  height: 400px;  
+color: rgb(255, 255, 255);
+}
+
+article9 {
+  float: right;
+  padding: 20px;
+  width: 70%;
+  background-image: url(https://i.pinimg.com/564x/79/21/dc/7921dc280916fd09b8e83724f30218bb.jpg);
+  height: 400px;  
+color: rgb(255, 255, 255);
+}
+
+article10 {
+  float: right;
+  padding: 20px;
+  width: 70%;
+  background-image: url(https://i.pinimg.com/564x/79/21/dc/7921dc280916fd09b8e83724f30218bb.jpg);
+  height: 400px;  
+color: rgb(255, 255, 255);
+}
+
+article11{
+  float: right;
+  padding: 20px;
+  width: 70%;
+  background-image: url(https://i.pinimg.com/564x/79/21/dc/7921dc280916fd09b8e83724f30218bb.jpg);
+  height: 400px;  
+color: rgb(255, 255, 255);
+}
+
+article12 {
+  float: right;
+  padding: 20px;
+  width: 70%;
+  background-image: url(https://i.pinimg.com/564x/79/21/dc/7921dc280916fd09b8e83724f30218bb.jpg);
+  height: 400px;  
+color: rgb(255, 255, 255);
+}
+
+article13 {
+  float: right;
+  padding: 20px;
+  width: 70%;
+  background-image: url(https://i.pinimg.com/564x/79/21/dc/7921dc280916fd09b8e83724f30218bb.jpg);
+  height: 400px;  
+color: rgb(255, 255, 255);
+}
+
+</style>
+</head>
+<body>
+  <div class= head>
+<h1 class="glow"> MOST POPULAR TATTOO MEANINGS (WITH PICTURES) </h1>
+</div>
+<h2>Opacity with Box</h2>
+<p>Hover over the image to see the effect.</p>
+ 
+<section> 
+    <nav>
+        <ul>
+          <li><a href="#">London</a></li>
+          <li><a href="#">Paris</a></li>
+          <li><a href="#">Tokyo</a></li>
+        </ul>
+      </nav>
+      <article1>
+        <h1>London</h1>
+        <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+        <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+      </article1>
+      <div class="container">
+    <img src="https://i.pinimg.com/564x/9d/22/62/9d2262361ed4e7c6e5c42e25818d7171.jpg" alt="Avatar" class="image" style="width:100%">
+    
+    <div class="middle">
+      <div class="text">...Therefore let him who desires peace get ready for war</div>
+    </div>
+
+  </div>
+  
+     
+  <nav>
+    <ul>
+      <li><a href="#">London</a></li>
+      <li><a href="#">Paris</a></li>
+      <li><a href="#">Tokyo</a></li>
+    </ul>
+  </nav>
+  <article2>
+    <h1>London</h1>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  </article2>
+  <div class="container">
+<img src="https://i.pinimg.com/564x/c6/25/fd/c625fd67365ff04e6f3ac6722c0a261d.jpg" alt="Avatar" class="image" style="width:100%">
+
+<div class="middle">
+  <div class="text">...Therefore let him who desires peace get ready for war</div>
+</div>
+
+</div>
+
+
+<nav>
+    <ul>
+      <li><a href="#">London</a></li>
+      <li><a href="#">Paris</a></li>
+      <li><a href="#">Tokyo</a></li>
+    </ul>
+  </nav>
+  <article3>
+    <h1>London</h1>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  </article3>
+  <div class="container">
+<img src="https://i.pinimg.com/474x/74/4d/ea/744dea78e6bbd8e5325b242d4269c460.jpg" alt="Avatar" class="image" style="width:100%">
+
+<div class="middle">
+  <div class="text">...Therefore let him who desires peace get ready for war</div>
+</div>
+
+</div>
+
+
+<nav>
+    <ul>
+      <li><a href="#">London</a></li>
+      <li><a href="#">Paris</a></li>
+      <li><a href="#">Tokyo</a></li>
+    </ul>
+  </nav>
+  <article4>
+    <h1>London</h1>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  </article4>
+  <div class="container">
+<img src="https://i.pinimg.com/564x/24/57/aa/2457aa5451e84be01e9b2ccba90bccf9.jpg" alt="Avatar" class="image" style="width:100%">
+
+<div class="middle">
+  <div class="text">...Therefore let him who desires peace get ready for war</div>
+</div>
+
+</div>
+
+<nav>
+    <ul>
+      <li><a href="#">London</a></li>
+      <li><a href="#">Paris</a></li>
+      <li><a href="#">Tokyo</a></li>
+    </ul>
+  </nav>
+  <article5>
+    <h1>London</h1>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  </article5>
+  <div class="container">
+<img src="https://i.pinimg.com/564x/94/e3/17/94e317f6b9a1bde4ffa14ae18fb83ee5.jpg" alt="Avatar" class="image" style="width:100%">
+
+<div class="middle">
+  <div class="text">...Therefore let him who desires peace get ready for war</div>
+</div>
+
+</div>
+
+<nav>
+    <ul>
+      <li><a href="#">London</a></li>
+      <li><a href="#">Paris</a></li>
+      <li><a href="#">Tokyo</a></li>
+    </ul>
+  </nav>
+  <article6>
+    <h1>London</h1>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  </article6>
+  <div class="container">
+<img src="https://i.pinimg.com/564x/4f/6a/5b/4f6a5bd3de2e4db47d036a980f7b8e3b.jpg" alt="Avatar" class="image" style="width:100%">
+
+<div class="middle">
+  <div class="text">Spartan</div>
+</div>
+
+</div>
+  
+
+<article7>
+    <h1>London</h1>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  </article7>
+  <div class="container">
+<img src="https://i.pinimg.com/564x/e4/34/0c/e4340ccb23e724cdf23f25f7bad3d230.jpg" alt="Avatar" class="image" style="width:100%">
+
+<div class="middle">
+  <div class="text">Spartan</div>
+</div>
+
+</div>
+
+<article8>
+    <h1>London</h1>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  </article8>
+  <div class="container">
+<img src="https://i.pinimg.com/564x/e4/34/0c/e4340ccb23e724cdf23f25f7bad3d230.jpg" alt="Avatar" class="image" style="width:100%">
+
+<div class="middle">
+  <div class="text">Spartan</div>
+</div>
+</div>
+<article9>
+    <h1>London</h1>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  </article9>
+  <div class="container">
+<img src="https://i.pinimg.com/564x/e4/34/0c/e4340ccb23e724cdf23f25f7bad3d230.jpg" alt="Avatar" class="image" style="width:100%">
+
+<div class="middle">
+  <div class="text">Spartan</div>
+</div>
+</div>
+<article10>
+    <h1>London</h1>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  </article10>
+  <div class="container">
+<img src="https://i.pinimg.com/564x/e4/34/0c/e4340ccb23e724cdf23f25f7bad3d230.jpg" alt="Avatar" class="image" style="width:100%">
+
+<div class="middle">
+  <div class="text">Spartan</div>
+</div>
+</div>
+<article11>
+    <h1>London</h1>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  </article11>
+  <div class="container">
+<img src="https://i.pinimg.com/564x/e4/34/0c/e4340ccb23e724cdf23f25f7bad3d230.jpg" alt="Avatar" class="image" style="width:100%">
+
+<div class="middle">
+  <div class="text">Spartan</div>
+</div>
+</div>
+<article12>
+    <h1>London</h1>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  </article12>
+  <div class="container">
+<img src="https://i.pinimg.com/564x/e4/34/0c/e4340ccb23e724cdf23f25f7bad3d230.jpg" alt="Avatar" class="image" style="width:100%">
+
+<div class="middle">
+  <div class="text">Spartan</div>
+</div>
+</div>
+<article12>
+    <h1>London</h1>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  </article12>
+  <div class="container">
+<img src="https://i.pinimg.com/564x/e4/34/0c/e4340ccb23e724cdf23f25f7bad3d230.jpg" alt="Avatar" class="image" style="width:100%">
+
+<div class="middle">
+  <div class="text">Spartan</div>
+</div>
+</div>
+</section>
+ 
+ 
+    
+    
+ 
+</body>
+</html> 

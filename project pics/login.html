@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <title>login-page</title>
+</head>
+ 
+ 
+<style>
+    body {
+  background-color: black;
+  font-family: cursive;
+}
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ececec, 0 0 40px #8a8788, 0 0 50px #a74e7a, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #887980, 0 0 40px #e6e6e6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+    /* CSS Reset */
+    body{
+        font-family: 'Big Shoulders Stencil Display', 'cursive';
+        font-family: 'Righteous', 'cursive';
+        color: rgb(0, 0, 0);
+        margin: 0px ;
+        padding: 0px;
+        background: url(u73-736099_tattoo-on-fingers-russian.jpg);
+         
+      
+    }
+    .left{
+        position: absolute;
+        left:20px;
+        top:20px;
+        display: inline-block;
+        
+
+    }
+        .left h1{
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .left img{
+         width:190px ;
+         filter:invert(100%);
+    }
+       
+        
+        .left div{
+            text-align: center;
+            line-height:3px ;
+            font-size:34px ;
+            font-family: fantasy ;
+            margin-top: 19px;
+             
+             
+
+        }
+    .mid{
+        display: inherit;
+        width: 26%;
+        top: 50px;
+        margin: 12px auto;
+        font-family:'Baloo Bhai', 'cursive' ;
+    
+         
+
+    }
+    .right{
+        position: absolute;
+        right: 158px;
+        top: 444px;
+        display: inline-block;
+        font-family:'Times New Roman', Times, serif;
+       
+          
+    }
+ .navbar{
+        display: inline-block;
+        font-family: 'Baloo Bhai', 'cursive';
+         
+ 
+    }
+    .navbar li{
+        font-size: 23px;
+        display:inline-block;
+        
+    }
+    .navbar li a{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 20px,0px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: wavy ; 
+        color: rgb(255, 255, 255);
+    }
+    .navbar  img{
+        filter: invert(100%);
+    }
+    .btn{
+        margin: 3px 1px;
+background-color: rgb(141, 138, 138);
+color: rgb(255, 255, 255);
+padding: 3px 62px;
+         border-radius: 20px;
+         border-color: lemonchiffon;
+         font-size: 22px;
+         font-family: 'Baloo Bhai', 'cursive';
+         cursor: pointer;
+         white-space: nowrap;
+         background-color: rgba(255, 255, 255, 0.11);
+         line-height:42px;
+         letter-spacing: 15;
+    }
+    .second .btn{
+        margin: 1px 1px;
+        
+    }
+    .btn img{
+        filter: invert(100%);
+    }
+    .btn:hover{
+        background-color:rgba(255, 255, 255, 0.404);
+
+    }
+    .container {
+    border: 64px double rgba(255, 255, 255, 0.336);
+    border-top: rgb(117, 115, 115);
+    border-bottom: rgb(136, 133, 133);
+    border-style: double;
+margin: 179px 9px;
+padding: 1px 33px;
+width: 18%;
+border-radius: -14px;
+color: rgb(255, 255, 255);
+text-decoration: underline;
+font-style: inherit;
+font-variant: small-caps;
+box-sizing: revert;
+cursor: pointer;
+}
+.container input {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #ffffff;
+}
+    .form-group input {
+        font-family: 'Baloo Bhai', 'cursive';
+        text-align: left;
+        display: block;
+        width: 328px;
+        padding: 1px;
+        border: 5px solid rgba(138, 224, 104, 0);
+        margin: 11px auto;
+        font-size: 18px;
+        border-radius: 50px;
+
+    }
+    .container h1 {
+        text-align: center;
+        font-family: fantasy;
+        color: #fdfdfd;
+    }
+
+    .container button {
+        display: block;
+        width: 74%;
+        margin: 50px auto;
+        cursor: pointer;
+
+    }
+    
+
+   
+     </style>
+<body>
+    <header class="header">
+        <!-- Left box for logo-->
+        <div class="left">
+         <img src="download.png" alt ="LOGO">
+         <div><h1 class="glow">Rapid-ink-Studio</h1></div>
+ 
+        </div>
+       <marquee behavior="alternate" direction="left"> 
+           <!--Mid box for navbar-->
+        <div class="navbar">
+            <li><a href="#" class="active">
+                   Rapid-Ink-Studio 745694199
+  </a></li>
+        
+        </div>
+    </marquee>
+     
+        <!--Right box for buttons-->
+         
+        <div class="right">
+            <button class="btn"> Talk to us  </button></a>
+              <button class="btn">Email Us</button>
+        </div>
+   </header>
+    
+   <form action="https://formspree.io/f/xjvlbvrw"  method=post
+   class="container">
+     <h1>SIGN-UP</h1>
+     
+    <div class="row">
+      <div class="col-25">
+        <label for="Age"> Log-in if you are </label>
+      </div>
+      
+      <div class="col-75">
+        <select id="Age" name="Age">
+          <option value="18+">18+</option>
+          <option value="19">18</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+        </select>
+      </div>
+    </div>
+    <label for="Name"><b>NAME</b></label>
+    <input type="text" placeholder="Enter Full Name" name="name" required>
+    
+    <br><label for="email"><b>Email  </b></label>
+    <input type="text" placeholder="Enter Email  " name="email" required>
+ 
+      </div>
+    </div>
+    
+    
+ 
+
+    <button type="submit" class="btn">SIGN-IN</button>
+  </form>
+ 
+
+        </div>
+ 
+
+        <marquee behavior="alternate" direction="right">
+            <a href="homepage.html"> <button class="btn"> <img src="download.png" alt ="LOGO"> </button></a>
+        </marquee>
+ 
+     
+
+</body>
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+.navbar {
+    background: #000000;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+  .navbar__container img{
+    filter: invert(100%);
+  }
+  
+  #navbar__logo {
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+  
+  .navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .navbar__item {
+    height: 80px;
+  }
+  
+  .navbar__links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    text-decoration: none;
+    height: 100%;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+  }
+body {
+  background-color: #000000;
+  padding: 20px;
+  font-family: Arial;
+  scroll-behavior: smooth;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+  color: rgb(219, 219, 219);
+}
+h2 { 
+     color: rgb(126, 126, 126);
+}
+p{
+    color: rgb(114, 114, 114);
+}
+ 
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <img src="download.png" alt="b-A-t.com">
+        <a href="rough .html" id="navbar__logo">Rapid-ink-Studio</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#services" class="navbar__links" id="services-page"
+              >Services</a
+            >
+          </li>
+          <li class="navbar__btn">
+            <a href="#sign-up" class="button" id="signup">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>MY WORK</h1>
+<hr>
+
+<h2>PORTFOLIO</h2>
+<p>STUDIO ART YOU SHOULD CHECK OUT</p>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+        <a href="my art\WhatsApp Image 2021-11-13 at 6.13.55 AM.jpeg"><button class="btn"></button><img src="my art\WhatsApp Image 2021-11-13 at 6.13.55 AM.jpeg" alt="Mountains" style="width:100%"></button</a>
+      <h3>My Work</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+        <a href="my art\WhatsApp Image 2021-11-13 at 6.13.56 AM (1).jpeg"><button class="btn"></button><img src="my art\WhatsApp Image 2021-11-13 at 6.13.56 AM (1).jpeg" alt="Lights" style="width:100%"></button</a>
+      <h3>My Work</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <a href="my art\WhatsApp Image 2021-11-13 at 6.13.57 AM (1).jpeg"><button class="btn"></button><img src="my art\WhatsApp Image 2021-11-13 at 6.13.57 AM (1).jpeg" alt="Nature" style="width:100%"></button</a>
+      <h3>My Work</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <a href="my art\WhatsApp Image 2021-11-13 at 6.13.57 AM.jpeg"><button class="btn"></button><img src="my art\WhatsApp Image 2021-11-13 at 6.13.57 AM.jpeg" alt="Mountains" style="width:100%"></button</a>
+      <h3>My Work</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<div class="content">
+  <a href="my art\WhatsApp Image 2021-11-13 at 6.13.57 AM.jpeg"><button class="btn"></button><img src="my art\WhatsApp Image 2021-11-13 at 6.13.57 AM.jpeg" alt="Bear" style="width:100%"></button</a>
+  <h3>Some Other Work</h3>
+  <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+  <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+</div>
+<div class="row">
+    <div class="column">
+      <div class="content">
+        <a href="my art\WhatsApp Image 2021-11-13 at 6.13.58 AM (2).jpeg"><button class="btn"></button><img src="my art\WhatsApp Image 2021-11-13 at 6.13.58 AM (2).jpeg" alt="Mountains" style="width:100%"></button</a>
+        <h3>My Work</h3>
+        <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+      <a href="my art\WhatsApp Image 2021-11-13 at 6.13.59 AM.jpeg"><button class="btn"></button><img src="my art\WhatsApp Image 2021-11-13 at 6.13.59 AM.jpeg" alt="Lights" style="width:100%"></button</a>
+        <h3>My Work</h3>
+        <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+      <a href="my art\WhatsApp Image 2021-11-13 at 6.13.59 AM (1).jpeg"><button class="btn"></button><img src="my art\WhatsApp Image 2021-11-13 at 6.13.59 AM (1).jpeg" alt="Nature" style="width:100%"></button</a>
+        <h3>My Work</h3>
+        <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+      <a href="my art\WhatsApp Image 2021-11-13 at 6.13.58 AM.jpeg"><button class="btn"></button><img src="my art\WhatsApp Image 2021-11-13 at 6.13.58 AM.jpeg" alt="Mountains" style="width:100%"></button</a>
+        <h3>My Work</h3>
+        <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+      </div>
+    </div>
+  <!-- END GRID -->
+  </div>
+  
+  <div class="content">
+    <a href="my art\WhatsApp Image 2021-11-13 at 6.13.55 AM.jpeg"><button class="btn"></button><img src="my art\WhatsApp Image 2021-11-13 at 6.14.00 AM (1).jpeg" alt="Bear" style="width:100%"></button</a>
+    <h3>Some Other Work</h3>
+    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <div class="content">
+        <a href="my art\WhatsApp Image 2021-11-13 at 6.13.55 AM.jpeg"><button class="btn"></button><img src="my art\WhatsApp Image 2021-11-13 at 6.14.00 AM.jpeg" alt="Mountains" style="width:100%"></button</a>
+        <h3>My Work</h3>
+        <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+      <a href="my art\WhatsApp Image 2021-11-13 at 6.13.55 AM.jpeg"><button class="btn"></button><img src="my art\WhatsApp Image 2021-11-13 at 6.14.09 AM (1).jpeg" alt="Lights" style="width:100%"></button</a>
+        <h3>My Work</h3>
+        <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+      <a href="my art\WhatsApp Image 2021-11-13 at 6.13.55 AM.jpeg"><button class="btn"></button><img src="my art\WhatsApp Image 2021-11-13 at 6.14.01 AM.jpeg" alt="Nature" style="width:100%"></button</a>
+        <h3>My Work</h3>
+        <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+      <a href="my art\WhatsApp Image 2021-11-13 at 6.13.55 AM.jpeg"><button class="btn"></button><img src="my art\WhatsApp Image 2021-11-13 at 6.14.10 AM.jpeg" alt="Mountains" style="width:100%"></button</a>
+        <h3>My Work</h3>
+        <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+      </div>
+    </div>
+  <!-- END GRID -->
+  </div>
+  
+  <div class="content">
+    <a href="my art\WhatsApp Image 2021-11-13 at 6.13.55 AM.jpeg"><button class="btn"></button><img src="my art\WhatsApp Image 2021-11-13 at 6.14.13 AM.jpeg" alt="Bear" style="width:100%"></button</a>
+    <h3>Some Other Work</h3>
+    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+  </div><div class="row">
+    <div class="column">
+      <div class="content">
+        <a href="my art\WhatsApp Image 2021-11-13 at 6.13.55 AM.jpeg"><button class="btn"></button><img src="my art\WhatsApp Image 2021-11-13 at 6.14.11 AM (1).jpeg" alt="Mountains" style="width:100%"></button</a>
+        <h3>My Work</h3>
+        <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+      <a href="my art\WhatsApp Image 2021-11-13 at 6.13.55 AM.jpeg"><button class="btn"></button><img src="my art\WhatsApp Image 2021-11-13 at 6.14.11 AM (1).jpeg" alt="Lights" style="width:100%"></button</a>
+        <h3>My Work</h3>
+        <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+      <a href="my art\WhatsApp Image 2021-11-13 at 6.13.55 AM.jpeg"><button class="btn"></button><img src="my art\WhatsApp Image 2021-11-13 at 6.14.11 AM (2).jpeg" alt="Nature" style="width:100%"></button</a>
+        <h3>My Work</h3>
+        <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+      <a href="my art\WhatsApp Image 2021-11-13 at 6.13.55 AM.jpeg"><button class="btn"></button><img src="my art\WhatsApp Image 2021-11-13 at 6.14.11 AM.jpeg" alt="Mountains" style="width:100%"></button</a>
+        <h3>My Work</h3> 
+        <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+      </div>
+    </div>
+  <!-- END GRID -->
+  </div>
+  
+  <div class="content">
+    <a href="my art\WhatsApp Image 2021-11-13 at 6.13.55 AM.jpeg"><button class="btn"></button><img src="my art\WhatsApp Image 2021-11-13 at 6.14.12 AM (1).jpeg" alt="Bear" style="width:100%"></button</a>
+    <h3>Some Other Work</h3>
+    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <div class="content">
+        <a href="my art\WhatsApp Image 2021-11-13 at 6.13.55 AM.jpeg"><button class="btn"></button><img src="my art\WhatsApp Image 2021-11-13 at 6.14.12 AM.jpeg" alt="Mountains" style="width:100%"></button</a>
+        <h3>My Work</h3>
+        <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+      <a href="my art\WhatsApp Image 2021-11-13 at 6.13.55 AM.jpeg"><button class="btn"></button><img src="my art\WhatsApp Image 2021-11-13 at 6.14.13 AM (1).jpeg" alt="Lights" style="width:100%"></button</a>
+        <h3>My Work</h3>
+        <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+      </div>
+    </div>
+
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>
